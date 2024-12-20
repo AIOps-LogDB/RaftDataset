@@ -1,0 +1,10 @@
+2023-05-27 03:00:42,466 [main] INFO  o.a.i.d.e.c.CompactionTaskManager:104 - Compaction task manager started. 
+2023-05-27 03:01:03,572 [pool-23-IoTDB-DataNodeInternalRPC-Processor-4] INFO  o.a.i.d.e.c.CompactionRecoverManager:58 - recovering inner compaction 
+2023-05-27 03:01:04,461 [pool-23-IoTDB-DataNodeInternalRPC-Processor-4] INFO  o.a.i.d.e.c.CompactionRecoverManager:58 - recovering inner compaction 
+2023-05-27 03:01:04,462 [pool-23-IoTDB-DataNodeInternalRPC-Processor-4] INFO  o.a.i.d.e.c.CompactionRecoverManager:64 - recovering cross compaction 
+2023-05-27 03:01:18,255 [pool-23-IoTDB-DataNodeInternalRPC-Processor-4] INFO  o.a.i.d.e.c.CompactionRecoverManager:58 - recovering inner compaction 
+2023-05-27 03:01:18,321 [pool-23-IoTDB-DataNodeInternalRPC-Processor-4] INFO  o.a.i.d.e.c.CompactionRecoverManager:58 - recovering inner compaction 
+2023-05-27 03:01:18,322 [pool-23-IoTDB-DataNodeInternalRPC-Processor-4] INFO  o.a.i.d.e.c.CompactionRecoverManager:64 - recovering cross compaction 
+2023-05-27 03:01:19,038 [pool-23-IoTDB-DataNodeInternalRPC-Processor-4] INFO  o.a.i.d.e.c.CompactionRecoverManager:58 - recovering inner compaction 
+2023-05-27 03:01:19,038 [pool-23-IoTDB-DataNodeInternalRPC-Processor-4] INFO  o.a.i.d.e.c.CompactionRecoverManager:58 - recovering inner compaction 
+2023-05-27 03:01:19,039 [pool-23-IoTDB-DataNodeInternalRPC-Processor-4] INFO  o.a.i.d.e.c.CompactionRecoverManager:64 - recovering cross compaction 

@@ -1,0 +1,529 @@
+2023-05-27 03:00:40,834 [main] WARN  o.a.i.c.s.StartupChecks:38 - iotdb.jmx.port missing from datanode-env.sh(Unix or OS X, if you use Windows, check conf/datanode-env.bat) 
+2023-05-27 03:00:41,426 [main] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:00:46,222 [pool-24-IoTDB-ClientRPC-Processor-1] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:00:59,992 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 3183706002ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=23ms 
+2023-05-27 03:00:59,992 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 3178574188ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=23ms 
+2023-05-27 03:01:02,512 [pool-24-IoTDB-ClientRPC-Processor-110] WARN  o.a.t.t.TIOStreamTransport:158 - Error closing output stream. 
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:182)
+	at org.apache.thrift.transport.TIOStreamTransport.close(TIOStreamTransport.java:156)
+	at org.apache.thrift.transport.TSocket.close(TSocket.java:252)
+	at org.apache.iotdb.rpc.TElasticFramedTransport.close(TElasticFramedTransport.java:96)
+	at org.apache.thrift.server.TThreadPoolServer$WorkerProcess.run(TThreadPoolServer.java:265)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:02,512 [pool-24-IoTDB-ClientRPC-Processor-136] WARN  o.a.t.t.TIOStreamTransport:158 - Error closing output stream. 
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:182)
+	at org.apache.thrift.transport.TIOStreamTransport.close(TIOStreamTransport.java:156)
+	at org.apache.thrift.transport.TSocket.close(TSocket.java:252)
+	at org.apache.iotdb.rpc.TElasticFramedTransport.close(TElasticFramedTransport.java:96)
+	at org.apache.thrift.server.TThreadPoolServer$WorkerProcess.run(TThreadPoolServer.java:265)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:02,931 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 114492315ns. No GCs detected. 
+2023-05-27 03:01:02,931 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 114463465ns. No GCs detected. 
+2023-05-27 03:01:04,073 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 139617186ns. No GCs detected. 
+2023-05-27 03:01:04,073 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 139917503ns. No GCs detected. 
+2023-05-27 03:01:05,605 [pool-24-IoTDB-ClientRPC-Processor-84$20230527_030103_00003_10] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:01:07,254 [pool-24-IoTDB-ClientRPC-Processor-57$20230527_030101_00002_10] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:01:07,254 [pool-24-IoTDB-ClientRPC-Processor-80$20230527_030100_00000_10] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:01:07,254 [pool-24-IoTDB-ClientRPC-Processor-46$20230527_030101_00001_10] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:01:07,254 [pool-24-IoTDB-ClientRPC-Processor-84$20230527_030103_00003_10] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:01:16,514 [grpc-default-executor-2] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed APPEND_ENTRIES request 9->10#1-t1,previous=(t:0, i:0),leaderCommit=-1,initializing? true,entries: size=1, first=(t:1, i:0), CONFIGURATIONENTRY(current:id: "11"
+address: "172.20.0.15:40010"
+startupRole: FOLLOWER
+,id: "9"
+address: "172.20.0.13:40010"
+startupRole: FOLLOWER
+,id: "10"
+address: "172.20.0.14:40010"
+startupRole: FOLLOWER
+, old:) 
+java.util.concurrent.CompletionException: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000001 not found.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1099)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2235)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:630)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:205)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:202)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$ServerRequestStreamObserver.onNext(GrpcServerProtocolService.java:124)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$StreamingServerCallHandler$StreamingServerCallListener.onMessage(ServerCalls.java:262)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailableInternal(ServerCallImpl.java:332)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailable(ServerCallImpl.java:315)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.runInContext(ServerImpl.java:834)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000001 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:629)
+	... 13 common frames omitted
+2023-05-27 03:01:17,461 [grpc-default-executor-2] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed APPEND_ENTRIES request 9->10#34-t1,previous=(t:0, i:0),leaderCommit=0,initializing? true,entries: size=1, first=(t:1, i:0), CONFIGURATIONENTRY(current:id: "11"
+address: "172.20.0.15:40010"
+startupRole: FOLLOWER
+,id: "9"
+address: "172.20.0.13:40010"
+startupRole: FOLLOWER
+,id: "10"
+address: "172.20.0.14:40010"
+startupRole: FOLLOWER
+, old:) 
+java.util.concurrent.CompletionException: org.apache.ratis.protocol.exceptions.ServerNotReadyException: 10@group-000100000001: The server role is not yet initialized.
+	at org.apache.ratis.util.JavaUtils.callAsUnchecked(JavaUtils.java:121)
+	at org.apache.ratis.server.impl.RaftServerImpl.lambda$executeSubmitServerRequestAsync$11(RaftServerImpl.java:809)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.ratis.protocol.exceptions.ServerNotReadyException: 10@group-000100000001: The server role is not yet initialized.
+	at org.apache.ratis.server.impl.RaftServerImpl.preAppendEntriesAsync(RaftServerImpl.java:1349)
+	at org.apache.ratis.server.impl.RaftServerImpl.appendEntriesAsync(RaftServerImpl.java:1309)
+	at org.apache.ratis.server.impl.RaftServerProxy.lambda$null$25(RaftServerProxy.java:630)
+	at org.apache.ratis.util.JavaUtils.callAsUnchecked(JavaUtils.java:117)
+	... 5 common frames omitted
+2023-05-27 03:01:18,403 [grpc-default-executor-1] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed requestVote 11->10#0 
+org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000002 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:360)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:355)
+	at org.apache.ratis.server.impl.RaftServerProxy.requestVote(RaftServerProxy.java:618)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService.requestVote(GrpcServerProtocolService.java:175)
+	at org.apache.ratis.proto.grpc.RaftServerProtocolServiceGrpc$MethodHandlers.invoke(RaftServerProtocolServiceGrpc.java:382)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at org.apache.ratis.thirdparty.io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:354)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:866)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:18,403 [grpc-default-executor-2] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed requestVote 11->10#0 
+org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000002 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:360)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:355)
+	at org.apache.ratis.server.impl.RaftServerProxy.requestVote(RaftServerProxy.java:618)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService.requestVote(GrpcServerProtocolService.java:175)
+	at org.apache.ratis.proto.grpc.RaftServerProtocolServiceGrpc$MethodHandlers.invoke(RaftServerProtocolServiceGrpc.java:382)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at org.apache.ratis.thirdparty.io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:354)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:866)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:18,446 [grpc-default-executor-1] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed requestVote 6->10#0 
+org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000002 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:360)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:355)
+	at org.apache.ratis.server.impl.RaftServerProxy.requestVote(RaftServerProxy.java:618)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService.requestVote(GrpcServerProtocolService.java:175)
+	at org.apache.ratis.proto.grpc.RaftServerProtocolServiceGrpc$MethodHandlers.invoke(RaftServerProtocolServiceGrpc.java:382)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at org.apache.ratis.thirdparty.io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:354)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:866)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:18,482 [grpc-default-executor-0] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed APPEND_ENTRIES request 11->10#1-t1,previous=(t:0, i:0),leaderCommit=0,initializing? true,entries: size=1, first=(t:1, i:0), CONFIGURATIONENTRY(current:id: "11"
+address: "172.20.0.15:40010"
+startupRole: FOLLOWER
+,id: "6"
+address: "172.20.0.10:40010"
+startupRole: FOLLOWER
+,id: "10"
+address: "172.20.0.14:40010"
+startupRole: FOLLOWER
+, old:) 
+java.util.concurrent.CompletionException: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000002 not found.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1099)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2235)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:630)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:205)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:202)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$ServerRequestStreamObserver.onNext(GrpcServerProtocolService.java:124)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$StreamingServerCallHandler$StreamingServerCallListener.onMessage(ServerCalls.java:262)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailableInternal(ServerCallImpl.java:332)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailable(ServerCallImpl.java:315)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.runInContext(ServerImpl.java:834)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000002 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:629)
+	... 13 common frames omitted
+2023-05-27 03:01:19,196 [grpc-default-executor-1] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed APPEND_ENTRIES request 11->10#1-t1,previous=(t:0, i:0),leaderCommit=0,initializing? true,entries: size=1, first=(t:1, i:0), CONFIGURATIONENTRY(current:id: "11"
+address: "172.20.0.15:40010"
+startupRole: FOLLOWER
+,id: "6"
+address: "172.20.0.10:40010"
+startupRole: FOLLOWER
+,id: "10"
+address: "172.20.0.14:40010"
+startupRole: FOLLOWER
+, old:) 
+java.util.concurrent.CompletionException: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000004 not found.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1099)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2235)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:630)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:205)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:202)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$ServerRequestStreamObserver.onNext(GrpcServerProtocolService.java:124)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$StreamingServerCallHandler$StreamingServerCallListener.onMessage(ServerCalls.java:262)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailableInternal(ServerCallImpl.java:332)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailable(ServerCallImpl.java:315)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.runInContext(ServerImpl.java:834)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000004 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:629)
+	... 13 common frames omitted
+2023-05-27 03:01:19,211 [grpc-default-executor-1] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed APPEND_ENTRIES request 11->10#2-t1,previous=(t:0, i:0),leaderCommit=0,initializing? true,entries: size=1, first=(t:1, i:0), CONFIGURATIONENTRY(current:id: "11"
+address: "172.20.0.15:40010"
+startupRole: FOLLOWER
+,id: "6"
+address: "172.20.0.10:40010"
+startupRole: FOLLOWER
+,id: "10"
+address: "172.20.0.14:40010"
+startupRole: FOLLOWER
+, old:) 
+java.util.concurrent.CompletionException: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000004 not found.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1099)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2235)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:630)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:205)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:202)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$ServerRequestStreamObserver.onNext(GrpcServerProtocolService.java:124)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$StreamingServerCallHandler$StreamingServerCallListener.onMessage(ServerCalls.java:262)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailableInternal(ServerCallImpl.java:332)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailable(ServerCallImpl.java:315)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.runInContext(ServerImpl.java:834)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000004 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:629)
+	... 13 common frames omitted
+2023-05-27 03:01:19,221 [grpc-default-executor-2] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed requestVote 11->10#0 
+org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000004 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:360)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:355)
+	at org.apache.ratis.server.impl.RaftServerProxy.requestVote(RaftServerProxy.java:618)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService.requestVote(GrpcServerProtocolService.java:175)
+	at org.apache.ratis.proto.grpc.RaftServerProtocolServiceGrpc$MethodHandlers.invoke(RaftServerProtocolServiceGrpc.java:382)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at org.apache.ratis.thirdparty.io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:354)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:866)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:19,221 [grpc-default-executor-0] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed requestVote 11->10#0 
+org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000100000004 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:360)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:355)
+	at org.apache.ratis.server.impl.RaftServerProxy.requestVote(RaftServerProxy.java:618)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService.requestVote(GrpcServerProtocolService.java:175)
+	at org.apache.ratis.proto.grpc.RaftServerProtocolServiceGrpc$MethodHandlers.invoke(RaftServerProtocolServiceGrpc.java:382)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at org.apache.ratis.thirdparty.io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:354)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:866)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:21,740 [grpc-default-executor-1] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed requestVote 11->10#0 
+org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000200000005 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:360)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:355)
+	at org.apache.ratis.server.impl.RaftServerProxy.requestVote(RaftServerProxy.java:618)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService.requestVote(GrpcServerProtocolService.java:175)
+	at org.apache.ratis.proto.grpc.RaftServerProtocolServiceGrpc$MethodHandlers.invoke(RaftServerProtocolServiceGrpc.java:382)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at org.apache.ratis.thirdparty.io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:354)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:866)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:21,740 [grpc-default-executor-4] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed requestVote 11->10#0 
+org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000200000005 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:360)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImpl(RaftServerProxy.java:355)
+	at org.apache.ratis.server.impl.RaftServerProxy.requestVote(RaftServerProxy.java:618)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService.requestVote(GrpcServerProtocolService.java:175)
+	at org.apache.ratis.proto.grpc.RaftServerProtocolServiceGrpc$MethodHandlers.invoke(RaftServerProtocolServiceGrpc.java:382)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at org.apache.ratis.thirdparty.io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:354)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:866)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:21,744 [grpc-default-executor-0] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed APPEND_ENTRIES request 11->10#1-t1,previous=(t:0, i:0),leaderCommit=0,initializing? true,entries: size=1, first=(t:1, i:0), CONFIGURATIONENTRY(current:id: "11"
+address: "172.20.0.15:50010"
+startupRole: FOLLOWER
+,id: "6"
+address: "172.20.0.10:50010"
+startupRole: FOLLOWER
+,id: "10"
+address: "172.20.0.14:50010"
+startupRole: FOLLOWER
+, old:) 
+java.util.concurrent.CompletionException: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000200000005 not found.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1099)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2235)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:630)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:205)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:202)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$ServerRequestStreamObserver.onNext(GrpcServerProtocolService.java:124)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$StreamingServerCallHandler$StreamingServerCallListener.onMessage(ServerCalls.java:262)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailableInternal(ServerCallImpl.java:332)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailable(ServerCallImpl.java:315)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.runInContext(ServerImpl.java:834)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000200000005 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:629)
+	... 13 common frames omitted
+2023-05-27 03:01:22,123 [grpc-default-executor-6] WARN  o.a.ratis.util.LogUtils:124 - 10: Failed APPEND_ENTRIES request 11->10#7-t1,previous=(t:0, i:0),leaderCommit=0,initializing? true,entries: size=1, first=(t:1, i:0), CONFIGURATIONENTRY(current:id: "11"
+address: "172.20.0.15:50010"
+startupRole: FOLLOWER
+,id: "6"
+address: "172.20.0.10:50010"
+startupRole: FOLLOWER
+,id: "10"
+address: "172.20.0.14:50010"
+startupRole: FOLLOWER
+, old:) 
+java.util.concurrent.CompletionException: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000200000005 not found.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1099)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2235)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:630)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:205)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$1.process(GrpcServerProtocolService.java:202)
+	at org.apache.ratis.grpc.server.GrpcServerProtocolService$ServerRequestStreamObserver.onNext(GrpcServerProtocolService.java:124)
+	at org.apache.ratis.thirdparty.io.grpc.stub.ServerCalls$StreamingServerCallHandler$StreamingServerCallListener.onMessage(ServerCalls.java:262)
+	at org.apache.ratis.thirdparty.io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailableInternal(ServerCallImpl.java:332)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailable(ServerCallImpl.java:315)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.runInContext(ServerImpl.java:834)
+	at org.apache.ratis.thirdparty.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.ratis.thirdparty.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.ratis.protocol.exceptions.GroupMismatchException: 10: group-000200000005 not found.
+	at org.apache.ratis.server.impl.RaftServerProxy$ImplMap.get(RaftServerProxy.java:150)
+	at org.apache.ratis.server.impl.RaftServerProxy.getImplFuture(RaftServerProxy.java:351)
+	at org.apache.ratis.server.impl.RaftServerProxy.appendEntriesAsync(RaftServerProxy.java:629)
+	... 13 common frames omitted
+2023-05-27 03:01:24,329 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2357ms but took extra 333589539ns (> threshold = 300ms) 
+2023-05-27 03:01:24,329 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 182896004ns. No GCs detected. 
+2023-05-27 03:01:24,329 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 182922346ns. No GCs detected. 
+2023-05-27 03:01:25,126 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 295164183ns. No GCs detected. 
+2023-05-27 03:01:25,126 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 295351482ns. No GCs detected. 
+2023-05-27 03:01:26,408 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3467ms but took extra 330781381ns (> threshold = 300ms) 
+2023-05-27 03:01:26,409 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3164ms but took extra 1125405500ns (> threshold = 300ms) 
+2023-05-27 03:01:26,409 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 781678615ns. No GCs detected. 
+2023-05-27 03:01:26,409 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 781571829ns. No GCs detected. 
+2023-05-27 03:01:26,415 [pool-24-IoTDB-ClientRPC-Processor-46] WARN  o.a.t.t.TIOStreamTransport:158 - Error closing output stream. 
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:182)
+	at org.apache.thrift.transport.TIOStreamTransport.close(TIOStreamTransport.java:156)
+	at org.apache.thrift.transport.TSocket.close(TSocket.java:252)
+	at org.apache.iotdb.rpc.TElasticFramedTransport.close(TElasticFramedTransport.java:96)
+	at org.apache.thrift.server.TThreadPoolServer$WorkerProcess.run(TThreadPoolServer.java:265)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-05-27 03:01:28,989 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3840ms but took extra 819059136ns (> threshold = 300ms) 
+2023-05-27 03:01:28,990 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3805ms but took extra 2499296839ns (> threshold = 300ms) 
+2023-05-27 03:01:28,990 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 2079574271ns. No GCs detected. 
+2023-05-27 03:01:28,990 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 2079914145ns. No GCs detected. 
+2023-05-27 03:01:31,164 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 1672481492ns. No GCs detected. 
+2023-05-27 03:01:31,164 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 1672214976ns. No GCs detected. 
+2023-05-27 03:01:32,279 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2536ms but took extra 753212987ns (> threshold = 300ms) 
+2023-05-27 03:01:32,279 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 613189079ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=980ms 
+2023-05-27 03:01:32,280 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 613289988ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=980ms 
+2023-05-27 03:01:35,130 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 1287488338ns. No GCs detected. 
+2023-05-27 03:01:35,131 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 1287389444ns. No GCs detected. 
+2023-05-27 03:01:39,289 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2369ms but took extra 1767056566ns (> threshold = 300ms) 
+2023-05-27 03:01:40,960 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 169501561ns. No GCs detected. 
+2023-05-27 03:01:40,960 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 181491677ns. No GCs detected. 
+2023-05-27 03:01:42,458 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2191ms but took extra 975421005ns (> threshold = 300ms) 
+2023-05-27 03:01:42,458 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 997500837ns. No GCs detected. 
+2023-05-27 03:01:42,458 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 997424979ns. No GCs detected. 
+2023-05-27 03:01:42,458 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2060ms but took extra 1109224981ns (> threshold = 300ms) 
+2023-05-27 03:01:42,458 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3497ms but took extra 478761476ns (> threshold = 300ms) 
+2023-05-27 03:01:48,344 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 329732877ns. No GCs detected. 
+2023-05-27 03:01:48,344 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 329874604ns. No GCs detected. 
+2023-05-27 03:01:54,154 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2606ms but took extra 1696580490ns (> threshold = 300ms) 
+2023-05-27 03:01:54,154 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2957ms but took extra 1416374958ns (> threshold = 300ms) 
+2023-05-27 03:01:54,154 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3320ms but took extra 1727054900ns (> threshold = 300ms) 
+2023-05-27 03:01:54,156 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 3809337751ns. No GCs detected. 
+2023-05-27 03:01:54,156 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 3809062024ns. No GCs detected. 
+2023-05-27 03:01:54,154 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2346ms but took extra 2013715942ns (> threshold = 300ms) 
+2023-05-27 03:01:57,890 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 108119910ns. No GCs detected. 
+2023-05-27 03:01:57,890 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 110070311ns. No GCs detected. 
+2023-05-27 03:02:02,889 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3060ms but took extra 1939791440ns (> threshold = 300ms) 
+2023-05-27 03:02:02,892 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3575ms but took extra 2835263875ns (> threshold = 300ms) 
+2023-05-27 03:02:02,892 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3218ms but took extra 3126470778ns (> threshold = 300ms) 
+2023-05-27 03:02:02,893 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 3999977910ns. No GCs detected. 
+2023-05-27 03:02:02,893 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 3999672421ns. No GCs detected. 
+2023-05-27 03:02:02,892 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3478ms but took extra 3223335853ns (> threshold = 300ms) 
+2023-05-27 03:02:09,448 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3596ms but took extra 2898008219ns (> threshold = 300ms) 
+2023-05-27 03:02:09,448 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3300ms but took extra 3223336721ns (> threshold = 300ms) 
+2023-05-27 03:02:09,448 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2593ms but took extra 3965678962ns (> threshold = 300ms) 
+2023-05-27 03:02:09,449 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2080ms but took extra 4476127892ns (> threshold = 300ms) 
+2023-05-27 03:02:09,452 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 6058083085ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=6281ms 
+2023-05-27 03:02:09,452 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 6058174689ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=6281ms 
+2023-05-27 03:02:13,290 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2722ms but took extra 1118678769ns (> threshold = 300ms) 
+2023-05-27 03:02:13,290 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2622ms but took extra 1218924493ns (> threshold = 300ms) 
+2023-05-27 03:02:13,290 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 1207013466ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=1283ms 
+2023-05-27 03:02:13,290 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 1207057734ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=1283ms 
+2023-05-27 03:02:13,904 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 112840162ns. No GCs detected. 
+2023-05-27 03:02:13,904 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 112258002ns. No GCs detected. 
+2023-05-27 03:02:23,096 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 104692775ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=588ms 
+2023-05-27 03:02:23,096 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 106932246ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=588ms 
+2023-05-27 03:02:23,096 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3394ms but took extra 527629476ns (> threshold = 300ms) 
+2023-05-27 03:02:28,519 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3384ms but took extra 2038784356ns (> threshold = 300ms) 
+2023-05-27 03:02:28,519 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2851ms but took extra 806862567ns (> threshold = 300ms) 
+2023-05-27 03:02:28,519 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3160ms but took extra 2195813905ns (> threshold = 300ms) 
+2023-05-27 03:02:28,519 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2261ms but took extra 2257975258ns (> threshold = 300ms) 
+2023-05-27 03:02:28,520 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 3421311130ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=3627ms 
+2023-05-27 03:02:28,520 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 3421285094ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=3627ms 
+2023-05-27 03:02:30,925 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2085ms but took extra 313209088ns (> threshold = 300ms) 
+2023-05-27 03:02:31,768 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 336893354ns. No GCs detected. 
+2023-05-27 03:02:31,768 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 336751569ns. No GCs detected. 
+2023-05-27 03:02:51,006 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3047ms but took extra 16870856924ns (> threshold = 300ms) 
+2023-05-27 03:02:51,006 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3804ms but took extra 15436997078ns (> threshold = 300ms) 
+2023-05-27 03:02:51,006 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3414ms but took extra 14920400357ns (> threshold = 300ms) 
+2023-05-27 03:02:51,006 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3115ms but took extra 14338018428ns (> threshold = 300ms) 
+2023-05-27 03:02:51,077 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 17216847990ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=8154ms 
+2023-05-27 03:02:51,078 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 17216836104ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=8154ms 
+2023-05-27 03:02:54,642 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3159ms but took extra 306407864ns (> threshold = 300ms) 
+2023-05-27 03:02:54,642 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2004ms but took extra 1461584059ns (> threshold = 300ms) 
+2023-05-27 03:02:54,642 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3164ms but took extra 301340491ns (> threshold = 300ms) 
+2023-05-27 03:02:54,642 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2959ms but took extra 506285094ns (> threshold = 300ms) 
+2023-05-27 03:02:54,643 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 1954393723ns. No GCs detected. 
+2023-05-27 03:02:54,643 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 1964504807ns. No GCs detected. 
+2023-05-27 03:03:19,344 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3560ms but took extra 17790359524ns (> threshold = 300ms) 
+2023-05-27 03:03:19,344 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2092ms but took extra 20194180471ns (> threshold = 300ms) 
+2023-05-27 03:03:19,345 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2347ms but took extra 20022983572ns (> threshold = 300ms) 
+2023-05-27 03:03:19,346 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 20664929441ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=19042ms 
+2023-05-27 03:03:19,346 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 20665037855ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=19042ms 
+2023-05-27 03:03:23,673 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3950ms but took extra 377443328ns (> threshold = 300ms) 
+2023-05-27 03:03:23,673 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3209ms but took extra 1118739574ns (> threshold = 300ms) 
+2023-05-27 03:03:23,673 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3806ms but took extra 521702317ns (> threshold = 300ms) 
+2023-05-27 03:03:23,673 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 2325882183ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=2723ms 
+2023-05-27 03:03:23,673 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 2325905761ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=2723ms 
+2023-05-27 03:03:25,723 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 651761111ns. No GCs detected. 
+2023-05-27 03:03:25,723 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 652269797ns. No GCs detected. 
+2023-05-27 03:03:29,374 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 126631697ns. No GCs detected. 
+2023-05-27 03:03:43,490 [10@group-000100000001-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3012ms but took extra 2374465756ns (> threshold = 300ms) 
+2023-05-27 03:03:43,491 [10@group-000100000004-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2933ms but took extra 3455226893ns (> threshold = 300ms) 
+2023-05-27 03:03:43,491 [10@group-000100000002-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2507ms but took extra 4369659496ns (> threshold = 300ms) 
+2023-05-27 03:03:43,491 [10@group-000200000005-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 3300ms but took extra 3696224467ns (> threshold = 300ms) 
+2023-05-27 03:03:43,491 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 4386551231ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=4594ms 
+2023-05-27 03:03:43,491 [JvmPauseMonitor1] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-10: Detected pause in JVM or host machine (eg GC): pause of approximately 4386532052ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=4594ms 

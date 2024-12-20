@@ -1,0 +1,42 @@
+2023-05-27 03:00:37,342 [main] WARN  o.a.i.c.s.StartupChecks:38 - iotdb.jmx.port missing from datanode-env.sh(Unix or OS X, if you use Windows, check conf/datanode-env.bat) 
+2023-05-27 03:00:37,936 [main] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.11, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:00:46,240 [pool-24-IoTDB-ClientRPC-Processor-1] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:00:47,493 [pool-24-IoTDB-ClientRPC-Processor-24$20230527_030047_00000_6] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:00:48,545 [pool-24-IoTDB-ClientRPC-Processor-24$20230527_030047_00000_6] WARN  o.a.i.d.m.p.a.c.PartitionCache:248 - [StorageGroup Cache] failed to create database root.sg1 
+2023-05-27 03:00:48,552 [pool-24-IoTDB-ClientRPC-Processor-24] WARN  o.a.i.d.u.ErrorHandlingUtils:62 - Status code: EXECUTE_STATEMENT_ERROR(301), operation: insertRecord failed 
+java.lang.RuntimeException: org.apache.iotdb.commons.exception.IoTDBException: root.sg1 has already been created as database
+	at org.apache.iotdb.db.mpp.plan.analyze.cache.PartitionCache.createStorageGroupAndUpdateCache(PartitionCache.java:252)
+	at org.apache.iotdb.db.mpp.plan.analyze.cache.PartitionCache.getStorageGroupCacheResult(PartitionCache.java:332)
+	at org.apache.iotdb.db.mpp.plan.analyze.cache.PartitionCache.getDeviceToStorageGroup(PartitionCache.java:159)
+	at org.apache.iotdb.db.mpp.plan.analyze.ClusterPartitionFetcher.splitDataPartitionQueryParam(ClusterPartitionFetcher.java:301)
+	at org.apache.iotdb.db.mpp.plan.analyze.ClusterPartitionFetcher.getOrCreateDataPartition(ClusterPartitionFetcher.java:255)
+	at org.apache.iotdb.db.mpp.plan.analyze.AnalyzeVisitor.getAnalysisForWriting(AnalyzeVisitor.java:1795)
+	at org.apache.iotdb.db.mpp.plan.analyze.AnalyzeVisitor.visitInsertRow(AnalyzeVisitor.java:1647)
+	at org.apache.iotdb.db.mpp.plan.analyze.AnalyzeVisitor.visitInsertRow(AnalyzeVisitor.java:161)
+	at org.apache.iotdb.db.mpp.plan.statement.crud.InsertRowStatement.accept(InsertRowStatement.java:143)
+	at org.apache.iotdb.db.mpp.plan.statement.StatementVisitor.process(StatementVisitor.java:107)
+	at org.apache.iotdb.db.mpp.plan.analyze.Analyzer.analyze(Analyzer.java:43)
+	at org.apache.iotdb.db.mpp.plan.execution.QueryExecution.analyze(QueryExecution.java:258)
+	at org.apache.iotdb.db.mpp.plan.execution.QueryExecution.<init>(QueryExecution.java:142)
+	at org.apache.iotdb.db.mpp.plan.Coordinator.createQueryExecution(Coordinator.java:104)
+	at org.apache.iotdb.db.mpp.plan.Coordinator.execute(Coordinator.java:137)
+	at org.apache.iotdb.db.mpp.plan.Coordinator.execute(Coordinator.java:164)
+	at org.apache.iotdb.db.service.thrift.impl.ClientRPCServiceImpl.insertRecord(ClientRPCServiceImpl.java:1140)
+	at org.apache.iotdb.service.rpc.thrift.IClientRPCService$Processor$insertRecord.getResult(IClientRPCService.java:4028)
+	at org.apache.iotdb.service.rpc.thrift.IClientRPCService$Processor$insertRecord.getResult(IClientRPCService.java:4008)
+	at org.apache.thrift.ProcessFunction.process(ProcessFunction.java:38)
+	at org.apache.iotdb.db.service.thrift.ProcessorWithMetrics.process(ProcessorWithMetrics.java:64)
+	at org.apache.thrift.server.TThreadPoolServer$WorkerProcess.run(TThreadPoolServer.java:248)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.iotdb.commons.exception.IoTDBException: root.sg1 has already been created as database
+	... 25 common frames omitted
+2023-05-27 03:00:48,588 [pool-24-IoTDB-ClientRPC-Processor-24$20230527_030048_00001_6] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:01:01,209 [pool-23-IoTDB-DataNodeInternalRPC-Processor-3$20230527_030101_00002_6] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.15, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:01:09,612 [pool-24-IoTDB-ClientRPC-Processor-24$20230527_030048_00001_6] WARN  o.a.i.d.c.ConfigNodeClient:724 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.10, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667) when executing getOrCreateDataPartitionTable 
+2023-05-27 03:01:11,091 [pool-24-IoTDB-ClientRPC-Processor-24$20230527_030048_00001_6] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.14, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:01:22,741 [pool-23-IoTDB-DataNodeInternalRPC-Processor-3$20230527_030102_00003_6] WARN  o.a.i.d.c.ConfigNodeClient:659 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.10, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667) when executing getOrCreateSchemaPartitionTable 
+2023-05-27 03:01:24,174 [pool-23-IoTDB-DataNodeInternalRPC-Processor-3$20230527_030102_00003_6] WARN  o.a.i.d.c.ConfigNodeClient:297 - Failed to connect to ConfigNode TEndPoint(ip:172.20.0.14, port:22277) from DataNode TEndPoint(ip:0.0.0.0, port:6667), because the current node is not leader, try next node 
+2023-05-27 03:02:23,791 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-6: Detected pause in JVM or host machine (eg GC): pause of approximately 167637640ns.
+GC pool 'G1 Young Generation' had collection(s): count=1 time=174ms 

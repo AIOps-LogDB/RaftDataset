@@ -1,0 +1,12 @@
+start inject network_partition
+155269
+Recover cdbe417e-e7e5-4714-9488-f69196b4d5b6 successfully
+Recover 48b4bff8-ceee-4c48-bdb6-807a8242b4f0 successfully
+Recover 219ed75f-2257-42bb-bd0f-f088286e1bcc successfully
+Recover c8a75e85-6db7-4e15-b775-19079cf50c72 successfully
+Recover 68644920-1e39-4f1a-bcf7-2bee4a0555e5 successfully
+Recover 2f233f05-07b5-4454-bf19-71ba92b3fee0 successfully
+Recover e5355ef4-9750-45fa-a9f7-e6eff656e619 successfully
+Recover dbdcb27a-72ab-40fe-82e3-6ca83cf7e7bd successfully
+end inject network_partition
+157357

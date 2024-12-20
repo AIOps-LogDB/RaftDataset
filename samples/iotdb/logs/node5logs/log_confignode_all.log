@@ -1,0 +1,165 @@
+2023-05-27 03:00:35,467 [main] INFO  o.a.i.c.c.ConfigNodeDescriptor:102 - Start to read config file file:/iotdb/sbin/../conf/iotdb-common.properties 
+2023-05-27 03:00:35,470 [main] INFO  o.a.i.c.c.ConfigNodeDescriptor:121 - start reading ConfigNode conf file: file:/iotdb/sbin/../conf/iotdb-confignode.properties 
+2023-05-27 03:00:35,476 [main] INFO  o.a.i.c.s.ConfigNodeCommandLine:68 - Running mode -s 
+2023-05-27 03:00:35,477 [main] WARN  o.a.i.c.s.StartupChecks:38 - iotdb.jmx.port missing from datanode-env.sh(Unix or OS X, if you use Windows, check conf/datanode-env.bat) 
+2023-05-27 03:00:35,478 [main] INFO  o.a.i.c.s.StartupChecks:56 - JDK version is 11. 
+2023-05-27 03:00:35,479 [main] INFO  o.a.i.c.c.ConfigNodeStartupCheck:134 - Make dirs: /iotdb/sbin/../data/confignode/system 
+2023-05-27 03:00:35,479 [main] INFO  o.a.i.c.c.ConfigNodeStartupCheck:134 - Make dirs: /iotdb/sbin/../data/confignode/consensus 
+2023-05-27 03:00:35,482 [main] INFO  o.a.i.c.s.ConfigNode:85 - Activating IoTDB-ConfigNode... 
+2023-05-27 03:00:35,488 [main] INFO  o.a.i.c.s.m.MetricService:47 - Start to start metric Service. 
+2023-05-27 03:00:35,489 [main] INFO  o.a.i.m.AbstractMetricService:92 - Start metric service at level: CORE 
+2023-05-27 03:00:35,489 [main] INFO  o.a.i.m.AbstractMetricService:111 - Load metricManager, type: MICROMETER 
+2023-05-27 03:00:35,510 [main] INFO  o.a.i.m.AbstractMetricService:130 - Detect more than one MetricManager, will use org.apache.iotdb.metrics.micrometer.MicrometerMetricManager 
+2023-05-27 03:00:35,510 [main] INFO  o.a.i.m.AbstractMetricService:137 - Load metric reporters, type: [] 
+2023-05-27 03:00:35,510 [main] INFO  o.a.i.c.s.m.MetricService:50 - Finish start metric Service 
+2023-05-27 03:00:35,524 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - process_cpu_load,[name, process] 
+2023-05-27 03:00:35,531 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - process_cpu_time,[name, process] 
+2023-05-27 03:00:35,532 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - process_max_mem,[name, process] 
+2023-05-27 03:00:35,532 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - process_total_mem,[name, process] 
+2023-05-27 03:00:35,532 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - process_free_mem,[name, process] 
+2023-05-27 03:00:35,534 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - sys_cpu_load,[name, system] 
+2023-05-27 03:00:35,535 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - sys_free_physical_memory_size,[name, system] 
+2023-05-27 03:00:35,536 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - sys_total_swap_space_size,[name, system] 
+2023-05-27 03:00:35,537 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - sys_free_swap_space_size,[name, system] 
+2023-05-27 03:00:35,537 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - sys_committed_vm_size,[name, system] 
+2023-05-27 03:00:35,537 [main] INFO  o.a.i.c.s.ConfigNode:215 - Successfully setup internal services. 
+2023-05-27 03:00:35,597 [main] INFO  o.a.i.c.a.a.BasicAuthorizer$InstanceHolder:92 - Authorizer provider class: org.apache.iotdb.commons.auth.authorizer.LocalFileAuthorizer 
+2023-05-27 03:00:35,599 [main] INFO  o.a.i.c.a.u.LocalFileUserAccessor:285 - user info dir /iotdb/sbin/../data/confignode/system/users is created 
+2023-05-27 03:00:35,608 [main] INFO  o.a.i.c.a.u.BasicUserManager:82 - Admin initialized 
+2023-05-27 03:00:35,609 [main] INFO  o.a.i.c.a.u.BasicUserManager:82 - Admin initialized 
+2023-05-27 03:00:35,610 [main] INFO  o.a.i.c.a.r.LocalFileRoleAccessor:234 - role info dir /iotdb/sbin/../data/confignode/system/roles is created 
+2023-05-27 03:00:35,610 [main] INFO  o.a.i.c.a.a.BasicAuthorizer:72 - Initialization of Authorizer completes 
+2023-05-27 03:00:35,642 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:131 - new cached thread pool: CQ-recovery 
+2023-05-27 03:00:35,646 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:186 - new single scheduled thread pool: Cluster-Heartbeat-Service 
+2023-05-27 03:00:35,647 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:186 - new single scheduled thread pool: Unknown-DataNode-Detector 
+2023-05-27 03:00:35,654 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:186 - new single scheduled thread pool: IoTDB-Region-Maintainer 
+2023-05-27 03:00:35,658 [main] INFO  o.a.i.c.p.s.ConfigProcedureStore:134 - Make procedure wal dir: /iotdb/sbin/../data/confignode/system/procedure 
+2023-05-27 03:00:35,664 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:186 - new single scheduled thread pool: Cluster-LoadStatistics-Service 
+2023-05-27 03:00:35,667 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:186 - new single scheduled thread pool: Cluster-LeaderBalancing-Service 
+2023-05-27 03:00:35,669 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - config_node,[name, total, status, Registered] 
+2023-05-27 03:00:35,670 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - data_node,[name, total, status, Registered] 
+2023-05-27 03:00:35,670 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - config_node,[name, total, status, Online] 
+2023-05-27 03:00:35,670 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - data_node,[name, total, status, Online] 
+2023-05-27 03:00:35,671 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - config_node,[name, total, status, Unknown] 
+2023-05-27 03:00:35,671 [main] INFO  o.a.i.m.m.t.MicrometerAutoGauge:40 - data_node,[name, total, status, Unknown] 
+2023-05-27 03:00:35,673 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:207 - new scheduled thread pool: OperatePipeProcedureRollback 
+2023-05-27 03:00:35,675 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:207 - new scheduled thread pool: CQ-Scheduler 
+2023-05-27 03:00:35,677 [main] INFO  o.a.i.c.s.ConfigNode:200 - Successfully initialize ConfigManager. 
+2023-05-27 03:00:35,681 [main] INFO  o.a.i.c.s.ThriftService:109 - IoTDB: start Config Node service... 
+2023-05-27 03:00:35,703 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:244 - new SynchronousQueue thread pool: ConfigNodeRPC-Processor 
+2023-05-27 03:00:35,707 [ConfigNodeRPC-Service] INFO  o.a.i.c.s.AbstractThriftServiceThread:256 - The Config Node service service thread begin to run... 
+2023-05-27 03:00:35,806 [main] INFO  o.a.i.c.s.ThriftService:135 - IoTDB: start Config Node service successfully, listening on ip 172.20.0.14 port 22277 
+2023-05-27 03:00:35,886 [main] WARN  o.a.i.d.c.IoTDBDescriptor:127 - Cannot find IOTDB_HOME or IOTDB_CONF environment variable when loading config file iotdb-common.properties, use default configuration 
+2023-05-27 03:00:35,891 [main] INFO  o.a.i.t.c.c.TSFileDescriptor:129 - try loading iotdb-common.properties from /iotdb/sbin/../conf/iotdb-common.properties 
+2023-05-27 03:00:35,902 [main] WARN  o.a.i.d.c.IoTDBDescriptor:171 - Couldn't load the configuration iotdb-common.properties from any of the known sources. 
+2023-05-27 03:00:35,904 [main] WARN  o.a.i.d.c.IoTDBDescriptor:127 - Cannot find IOTDB_HOME or IOTDB_CONF environment variable when loading config file iotdb-datanode.properties, use default configuration 
+2023-05-27 03:00:35,904 [main] WARN  o.a.i.d.c.IoTDBDescriptor:199 - Couldn't load the configuration iotdb-datanode.properties from any of the known sources. 
+2023-05-27 03:00:36,182 [main] INFO  o.a.i.c.c.IoTDBThreadPoolFactory:131 - new cached thread pool: ratis-add 
+2023-05-27 03:00:36,267 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.rpc.type = GRPC (default) 
+2023-05-27 03:00:36,271 [main] INFO  o.a.ratis.conf.ConfUtils:53 - raft.grpc.admin.host = null (fallback to raft.grpc.server.host) 
+2023-05-27 03:00:36,272 [main] INFO  o.a.ratis.conf.ConfUtils:53 - raft.grpc.admin.port = 22278 (fallback to raft.grpc.server.port) 
+2023-05-27 03:00:36,272 [main] INFO  o.a.ratis.conf.ConfUtils:53 - raft.grpc.client.host = null (fallback to raft.grpc.server.host) 
+2023-05-27 03:00:36,272 [main] INFO  o.a.ratis.conf.ConfUtils:53 - raft.grpc.client.port = 22278 (fallback to raft.grpc.server.port) 
+2023-05-27 03:00:36,273 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.grpc.server.host = null (default) 
+2023-05-27 03:00:36,273 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.grpc.server.port = 22278 (custom) 
+2023-05-27 03:00:36,273 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.grpc.message.size.max = 512MB (=536870912) (custom) 
+2023-05-27 03:00:36,274 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.appender.buffer.byte-limit = 4194304 (custom) 
+2023-05-27 03:00:36,274 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.grpc.flow.control.window = 4194304 (custom) 
+2023-05-27 03:00:36,274 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.rpc.request.timeout = 3000ms (default) 
+2023-05-27 03:00:36,287 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.grpc.server.heartbeat.channel = true (default) 
+2023-05-27 03:00:36,289 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.grpc.server.async.request.thread.pool.cached = true (default) 
+2023-05-27 03:00:36,290 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.grpc.server.async.request.thread.pool.size = 32 (default) 
+2023-05-27 03:00:36,440 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.datastream.type = DISABLED (default) 
+2023-05-27 03:00:36,442 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.threadpool.proxy.cached = true (default) 
+2023-05-27 03:00:36,442 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.threadpool.proxy.size = 0 (default) 
+2023-05-27 03:00:36,443 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.rpc.slowness.timeout = 10min (custom) 
+2023-05-27 03:00:36,443 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.leaderelection.leader.step-down.wait-time = 30s (custom) 
+2023-05-27 03:00:36,447 [main] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.storage.dir = [/iotdb/sbin/../data/confignode/consensus] (custom) 
+2023-05-27 03:00:36,459 [main] INFO  o.a.r.s.i.RaftServerProxy:393 - 4: start RPC server 
+2023-05-27 03:00:36,537 [main] INFO  o.a.r.g.s.GrpcService:270 - 4: GrpcService started, listening on 22278 
+2023-05-27 03:00:36,540 [main] INFO  o.a.i.c.s.ConfigNode:145 - IoTDB-ConfigNode 4 has registered successfully. Waiting for the leader's scheduling to join the cluster. 
+2023-05-27 03:00:36,540 [JvmPauseMonitor0] INFO  o.a.r.u.JvmPauseMonitor:105 - JvmPauseMonitor-4: Started 
+2023-05-27 03:00:37,449 [pool-9-IoTDB-ConfigNodeRPC-Processor-1] INFO  o.a.i.c.m.ConsensusManager:212 - createPeerForConsensusGroup []... 
+2023-05-27 03:00:37,515 [pool-9-IoTDB-ConfigNodeRPC-Processor-1] INFO  o.a.r.m.MetricRegistriesLoader:64 - Loaded MetricRegistries class org.apache.ratis.metrics.impl.MetricRegistriesImpl 
+2023-05-27 03:00:37,983 [grpc-default-executor-0] INFO  o.a.r.s.i.RaftServerProxy$ImplMap:96 - 4: addNew group-000000000000:[] returns group-000000000000:java.util.concurrent.CompletableFuture@64f98cca[Not completed] 
+2023-05-27 03:00:37,998 [pool-3-thread-1] INFO  o.a.r.s.i.RaftServerImpl:195 - 4: new RaftServerImpl for group-000000000000:[] with ApplicationStateMachineProxy:uninitialized 
+2023-05-27 03:00:38,000 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.rpc.timeout.min = 2000ms (custom) 
+2023-05-27 03:00:38,001 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.rpc.timeout.max = 4000ms (custom) 
+2023-05-27 03:00:38,001 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.rpc.sleep.time = 1s (custom) 
+2023-05-27 03:00:38,002 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.rpc.slowness.timeout = 10min (custom) 
+2023-05-27 03:00:38,002 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.leaderelection.leader.step-down.wait-time = 30s (custom) 
+2023-05-27 03:00:38,002 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.sleep.deviation.threshold = 300ms (default) 
+2023-05-27 03:00:38,012 [pool-3-thread-1] INFO  o.a.r.s.impl.ServerState:118 - 4@group-000000000000: ConfigurationManager, init=-1: peers:[]|listeners:[], old=null, confs=<EMPTY_MAP> 
+2023-05-27 03:00:38,013 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.storage.dir = [/iotdb/sbin/../data/confignode/consensus] (custom) 
+2023-05-27 03:00:38,019 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.corruption.policy = EXCEPTION (default) 
+2023-05-27 03:00:38,019 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.storage.free-space.min = 0MB (=0) (default) 
+2023-05-27 03:00:38,029 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.notification.no-leader.timeout = 60s (default) 
+2023-05-27 03:00:38,032 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.retrycache.expirytime = 60s (default) 
+2023-05-27 03:00:38,033 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.retrycache.statistics.expirytime = 100μs (default) 
+2023-05-27 03:00:38,051 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.appender.install.snapshot.enabled = true (default) 
+2023-05-27 03:00:38,052 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.threadpool.server.cached = true (default) 
+2023-05-27 03:00:38,052 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.threadpool.server.size = 0 (default) 
+2023-05-27 03:00:38,053 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.threadpool.client.cached = true (default) 
+2023-05-27 03:00:38,054 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.threadpool.client.size = 0 (default) 
+2023-05-27 03:00:38,054 [pool-3-thread-1] INFO  o.a.r.s.s.RaftStorageDirectoryImpl:137 - The storage directory /iotdb/data/confignode/consensus/47474747-4747-4747-4747-000000000000 does not exist. Creating ... 
+2023-05-27 03:00:38,059 [pool-3-thread-1] INFO  o.a.r.s.s.RaftStorageDirectoryImpl:231 - Lock on /iotdb/sbin/../data/confignode/consensus/47474747-4747-4747-4747-000000000000/in_use.lock acquired by nodename 12@2da3bef2f48d 
+2023-05-27 03:00:38,065 [pool-3-thread-1] INFO  o.a.r.s.s.RaftStorageImpl:96 - Storage directory /iotdb/sbin/../data/confignode/consensus/47474747-4747-4747-4747-000000000000 has been successfully formatted. 
+2023-05-27 03:00:38,069 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.use.memory = false (default) 
+2023-05-27 03:00:38,076 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.purge.gap = 1024 (default) 
+2023-05-27 03:00:38,077 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.appender.buffer.byte-limit = 4194304 (custom) 
+2023-05-27 03:00:38,078 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.statemachine.data.read.timeout = 1000ms (default) 
+2023-05-27 03:00:38,079 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.purge.preservation.log.num = 1000 (custom) 
+2023-05-27 03:00:38,081 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.segment.size.max = 24MB (=25165824) (custom) 
+2023-05-27 03:00:38,087 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.segment.cache.num.max = 2 (custom) 
+2023-05-27 03:00:38,087 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.segment.cache.size.max = 25165824 (custom) 
+2023-05-27 03:00:38,093 [pool-3-thread-1] INFO  o.a.r.s.r.s.SegmentedRaftLogWorker:189 - new 4@group-000000000000-SegmentedRaftLogWorker for RaftStorageImpl:Storage Directory /iotdb/sbin/../data/confignode/consensus/47474747-4747-4747-4747-000000000000 
+2023-05-27 03:00:38,093 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.queue.byte-limit = 64MB (=67108864) (custom) 
+2023-05-27 03:00:38,094 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.queue.element-limit = 4096 (default) 
+2023-05-27 03:00:38,095 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.segment.size.max = 24MB (=25165824) (custom) 
+2023-05-27 03:00:38,095 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.preallocated.size = 4MB (=4194304) (custom) 
+2023-05-27 03:00:38,096 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.force.sync.num = 128 (default) 
+2023-05-27 03:00:38,096 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.statemachine.data.sync = true (default) 
+2023-05-27 03:00:38,097 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.statemachine.data.sync.timeout = 10s (default) 
+2023-05-27 03:00:38,097 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.statemachine.data.sync.timeout.retry = -1 (default) 
+2023-05-27 03:00:38,104 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.write.buffer.size = 64KB (=65536) (custom) 
+2023-05-27 03:00:38,104 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.appender.buffer.byte-limit = 4194304 (custom) 
+2023-05-27 03:00:38,105 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.unsafe-flush.enabled = false (default) 
+2023-05-27 03:00:38,106 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.async-flush.enabled = false (default) 
+2023-05-27 03:00:38,106 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.statemachine.data.caching.enabled = false (default) 
+2023-05-27 03:00:38,112 [pool-3-thread-1] INFO  o.a.r.s.r.s.SegmentedRaftLogWorker:135 - 4@group-000000000000-SegmentedRaftLogWorker: flushIndex: setUnconditionally 0 -> -1 
+2023-05-27 03:00:38,112 [pool-3-thread-1] INFO  o.a.r.s.r.s.SegmentedRaftLogWorker:135 - 4@group-000000000000-SegmentedRaftLogWorker: safeCacheEvictIndex: setUnconditionally 0 -> -1 
+2023-05-27 03:00:38,113 [pool-3-thread-1] INFO  o.a.r.s.i.RaftServerImpl:340 - 4@group-000000000000: start with initializing state, conf=-1: peers:[]|listeners:[], old=null 
+2023-05-27 03:00:38,114 [pool-3-thread-1] INFO  o.a.r.s.i.RaftServerImpl:321 - 4@group-000000000000: changes role from      null to FOLLOWER at term 0 for startInitializing 
+2023-05-27 03:00:38,116 [pool-3-thread-1] INFO  o.a.r.util.JmxRegister:44 - Successfully registered JMX Bean with object name Ratis:service=RaftServer,group=group-000000000000,id=4 
+2023-05-27 03:00:38,118 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.snapshot.auto.trigger.enabled = true (custom) 
+2023-05-27 03:00:38,118 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.snapshot.auto.trigger.threshold = 400000 (default) 
+2023-05-27 03:00:38,119 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.snapshot.retention.file.num = -1 (default) 
+2023-05-27 03:00:38,120 [pool-3-thread-1] INFO  o.a.ratis.conf.ConfUtils:46 - raft.server.log.purge.upto.snapshot.index = true (custom) 
+2023-05-27 03:00:38,228 [4-server-thread1] INFO  o.a.i.c.c.s.ConfigNodeRegionStateMachine:210 - Current node [nodeId:4, ip:port: TEndPoint(ip:172.20.0.14, port:22278)] is not longer the leader, the new leader is [nodeId:0] 
+2023-05-27 03:00:38,230 [4-server-thread1] INFO  o.a.r.s.impl.ServerState:313 - 4@group-000000000000: change Leader from null to 0 at term 1 for appendEntries, leader elected after 200ms 
+2023-05-27 03:00:38,235 [4-server-thread1] INFO  o.a.r.s.impl.RoleInfo:139 - 4: start 4@group-000000000000-FollowerState 
+2023-05-27 03:00:38,252 [4-server-thread2] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 0: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null 
+2023-05-27 03:00:38,253 [4-server-thread2] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 17: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[] 
+2023-05-27 03:00:38,254 [4-server-thread2] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 19: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null 
+2023-05-27 03:00:38,261 [4-server-thread2] INFO  o.a.r.s.r.s.SegmentedRaftLogWorker:452 - 4@group-000000000000-SegmentedRaftLogWorker: Starting segment from index:0 
+2023-05-27 03:00:38,380 [4@group-000000000000-SegmentedRaftLogWorker] INFO  o.a.r.s.r.s.SegmentedRaftLogWorker$StartLogSegment:656 - 4@group-000000000000-SegmentedRaftLogWorker: created new log segment /iotdb/sbin/../data/confignode/consensus/47474747-4747-4747-4747-000000000000/current/log_inprogress_0 
+2023-05-27 03:00:38,405 [4-server-thread2] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 41: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[] 
+2023-05-27 03:00:38,410 [4-server-thread1] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 43: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null 
+2023-05-27 03:00:38,414 [4@group-000000000000-StateMachineUpdater] INFO  o.a.i.c.p.node.NodeInfo:322 - Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:0, internalEndPoint:TEndPoint(ip:172.20.0.10, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.10, port:22278)). Current ConfigNodeGroup: {0=TConfigNodeLocation(configNodeId:0, internalEndPoint:TEndPoint(ip:172.20.0.10, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.10, port:22278))} 
+2023-05-27 03:00:38,431 [pool-9-IoTDB-ConfigNodeRPC-Processor-1] INFO  o.a.i.c.c.SystemPropertiesUtils:268 - System properties file /iotdb/sbin/../data/confignode/system/confignode-system.properties for ConfigNode is created. 
+2023-05-27 03:00:38,433 [pool-9-IoTDB-ConfigNodeRPC-Processor-1] INFO  o.a.i.c.s.t.ConfigNodeRPCServiceProcessor:453 - IoTDB-ConfigNode has successfully started and joined the cluster. 
+2023-05-27 03:00:38,440 [4@group-000000000000-StateMachineUpdater] INFO  o.a.i.c.p.node.NodeInfo:322 - Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:1, internalEndPoint:TEndPoint(ip:172.20.0.11, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.11, port:22278)). Current ConfigNodeGroup: {0=TConfigNodeLocation(configNodeId:0, internalEndPoint:TEndPoint(ip:172.20.0.10, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.10, port:22278)), 1=TConfigNodeLocation(configNodeId:1, internalEndPoint:TEndPoint(ip:172.20.0.11, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.11, port:22278))} 
+2023-05-27 03:00:38,463 [4@group-000000000000-StateMachineUpdater] INFO  o.a.i.c.p.node.NodeInfo:322 - Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:4, internalEndPoint:TEndPoint(ip:172.20.0.14, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.14, port:22278)). Current ConfigNodeGroup: {0=TConfigNodeLocation(configNodeId:0, internalEndPoint:TEndPoint(ip:172.20.0.10, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.10, port:22278)), 1=TConfigNodeLocation(configNodeId:1, internalEndPoint:TEndPoint(ip:172.20.0.11, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.11, port:22278)), 4=TConfigNodeLocation(configNodeId:4, internalEndPoint:TEndPoint(ip:172.20.0.14, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.14, port:22278))} 
+2023-05-27 03:00:39,336 [4-server-thread2] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 67: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 5|rpc:172.20.0.15:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[] 
+2023-05-27 03:00:39,346 [4-server-thread1] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 69: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 5|rpc:172.20.0.15:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null 
+2023-05-27 03:00:39,400 [4@group-000000000000-StateMachineUpdater] INFO  o.a.i.c.p.node.NodeInfo:322 - Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:5, internalEndPoint:TEndPoint(ip:172.20.0.15, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.15, port:22278)). Current ConfigNodeGroup: {0=TConfigNodeLocation(configNodeId:0, internalEndPoint:TEndPoint(ip:172.20.0.10, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.10, port:22278)), 1=TConfigNodeLocation(configNodeId:1, internalEndPoint:TEndPoint(ip:172.20.0.11, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.11, port:22278)), 4=TConfigNodeLocation(configNodeId:4, internalEndPoint:TEndPoint(ip:172.20.0.14, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.14, port:22278)), 5=TConfigNodeLocation(configNodeId:5, internalEndPoint:TEndPoint(ip:172.20.0.15, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.15, port:22278))} 
+2023-05-27 03:00:40,779 [4-server-thread2] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 89: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 3|rpc:172.20.0.13:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 5|rpc:172.20.0.15:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 5|rpc:172.20.0.15:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[] 
+2023-05-27 03:00:40,788 [4-server-thread1] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 91: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 3|rpc:172.20.0.13:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 5|rpc:172.20.0.15:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null 
+2023-05-27 03:00:40,819 [4@group-000000000000-StateMachineUpdater] INFO  o.a.i.c.p.node.NodeInfo:322 - Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:3, internalEndPoint:TEndPoint(ip:172.20.0.13, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.13, port:22278)). Current ConfigNodeGroup: {0=TConfigNodeLocation(configNodeId:0, internalEndPoint:TEndPoint(ip:172.20.0.10, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.10, port:22278)), 1=TConfigNodeLocation(configNodeId:1, internalEndPoint:TEndPoint(ip:172.20.0.11, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.11, port:22278)), 3=TConfigNodeLocation(configNodeId:3, internalEndPoint:TEndPoint(ip:172.20.0.13, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.13, port:22278)), 4=TConfigNodeLocation(configNodeId:4, internalEndPoint:TEndPoint(ip:172.20.0.14, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.14, port:22278)), 5=TConfigNodeLocation(configNodeId:5, internalEndPoint:TEndPoint(ip:172.20.0.15, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.15, port:22278))} 
+2023-05-27 03:00:41,925 [4-server-thread1] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 117: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 2|rpc:172.20.0.12:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 3|rpc:172.20.0.13:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 5|rpc:172.20.0.15:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 3|rpc:172.20.0.13:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 5|rpc:172.20.0.15:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[] 
+2023-05-27 03:00:41,932 [4-server-thread2] INFO  o.a.r.s.impl.ServerState:430 - 4@group-000000000000: set configuration 119: peers:[0|rpc:172.20.0.10:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 1|rpc:172.20.0.11:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 2|rpc:172.20.0.12:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 3|rpc:172.20.0.13:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 4|rpc:172.20.0.14:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, 5|rpc:172.20.0.15:22278|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null 
+2023-05-27 03:00:41,967 [4@group-000000000000-StateMachineUpdater] INFO  o.a.i.c.p.node.NodeInfo:322 - Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:2, internalEndPoint:TEndPoint(ip:172.20.0.12, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.12, port:22278)). Current ConfigNodeGroup: {0=TConfigNodeLocation(configNodeId:0, internalEndPoint:TEndPoint(ip:172.20.0.10, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.10, port:22278)), 1=TConfigNodeLocation(configNodeId:1, internalEndPoint:TEndPoint(ip:172.20.0.11, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.11, port:22278)), 2=TConfigNodeLocation(configNodeId:2, internalEndPoint:TEndPoint(ip:172.20.0.12, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.12, port:22278)), 3=TConfigNodeLocation(configNodeId:3, internalEndPoint:TEndPoint(ip:172.20.0.13, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.13, port:22278)), 4=TConfigNodeLocation(configNodeId:4, internalEndPoint:TEndPoint(ip:172.20.0.14, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.14, port:22278)), 5=TConfigNodeLocation(configNodeId:5, internalEndPoint:TEndPoint(ip:172.20.0.15, port:22277), consensusEndPoint:TEndPoint(ip:172.20.0.15, port:22278))} 
+2023-05-27 03:00:58,657 [4@group-000000000000-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2473ms but took extra 2746319675ns (> threshold = 300ms) 
+2023-05-27 03:00:54,615 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-4: Detected pause in JVM or host machine (eg GC): pause of approximately 992384490ns. No GCs detected. 
+2023-05-27 03:01:20,746 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-4: Detected pause in JVM or host machine (eg GC): pause of approximately 791494243ns. No GCs detected. 
+2023-05-27 03:01:31,045 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-4: Detected pause in JVM or host machine (eg GC): pause of approximately 214278265ns. No GCs detected. 

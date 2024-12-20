@@ -1,0 +1,1 @@
+2023-05-27 03:01:24,210 [pool-24-IoTDB-ClientRPC-Processor-11$20230527_030123_00008_7.1.0] ERROR o.a.i.d.m.p.s.FragmentInstanceDispatcherImpl:173 - dispatch write failed. status: TSStatus(code:305), code: INTERNAL_SERVER_ERROR(305), message: null, node TEndPoint(ip:172.20.0.12, port:9003) 

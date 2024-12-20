@@ -1,0 +1,1266 @@
+2023-08-24 18:04:09,150 INFO  [pool-2-thread-4](MetaMasterFactory.java:49) - Creating alluxio.master.meta.MetaMaster 
+2023-08-24 18:04:09,150 INFO  [pool-2-thread-2](FileSystemMasterFactory.java:49) - Creating alluxio.master.file.FileSystemMaster 
+2023-08-24 18:04:09,150 INFO  [pool-2-thread-5](MetricsMasterFactory.java:48) - Creating alluxio.master.metrics.MetricsMaster 
+2023-08-24 18:04:09,150 INFO  [pool-2-thread-3](JournalMasterFactory.java:45) - Creating alluxio.master.journal.JournalMaster 
+2023-08-24 18:04:09,150 INFO  [pool-2-thread-1](BlockMasterFactory.java:49) - Creating alluxio.master.block.BlockMaster 
+2023-08-24 18:04:09,152 INFO  [pool-2-thread-6](ThrottleMasterFactory.java:53) - Creating alluxio.master.throttle.DefaultThrottleMaster 
+2023-08-24 18:04:09,345 INFO  [pool-2-thread-1](RocksStore.java:139) - Closing BlockStore rocks database
+2023-08-24 18:04:09,379 INFO  [pool-2-thread-1](RocksStore.java:195) - Opened rocks database under path /opt/alluxio-2.9.3/metastore/blocks
+2023-08-24 18:04:09,481 INFO  [pool-2-thread-2](ExtensionFactoryRegistry.java:217) - Loading core jars from /opt/alluxio-2.9.3/lib
+2023-08-24 18:04:09,517 WARN  [pool-2-thread-2](ExtensionFactoryRegistry.java:256) - Failed to load jar /opt/alluxio-2.9.3/lib/alluxio-underfs-cosn-2.9.4-SNAPSHOT.jar: java.lang.NoClassDefFoundError: alluxio/underfs/hdfs/HdfsUnderFileSystemFactory
+2023-08-24 18:04:09,555 INFO  [pool-2-thread-2](ExtensionFactoryRegistry.java:207) - Loading extension jars from /opt/alluxio-2.9.3/extensions
+2023-08-24 18:04:09,678 INFO  [pool-2-thread-2](RocksStore.java:139) - Closing InodeStore rocks database
+2023-08-24 18:04:09,706 INFO  [pool-2-thread-2](RocksStore.java:195) - Opened rocks database under path /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:04:09,810 INFO  [pool-2-thread-2](MetricsSystem.java:265) - Starting sinks with config: {}.
+2023-08-24 18:04:09,812 INFO  [pool-2-thread-2](MetricsHeartbeatContext.java:169) - Created metrics heartbeat with ID app-771994001577127723. This ID will be used for identifying info from the client. It can be set manually through the alluxio.user.app.id property
+2023-08-24 18:04:09,828 INFO  [pool-2-thread-2](RocksStore.java:139) - Closing InodeStore rocks database
+2023-08-24 18:04:09,861 INFO  [pool-2-thread-2](RocksStore.java:195) - Opened rocks database under path /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:04:09,861 INFO  [pool-2-thread-2](RocksStore.java:129) - Cleared store at /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:04:09,909 INFO  [main](AlluxioMasterProcess.java:130) - New process created.
+2023-08-24 18:04:09,937 INFO  [main](ProcessUtils.java:66) - Starting Alluxio master @alluxio-master1:19998.
+2023-08-24 18:04:09,937 INFO  [main](ProcessUtils.java:67) - Alluxio version: 2.9.4-SNAPSHOT-95dfd109de128cee94106d430c015698770a4591
+2023-08-24 18:04:09,937 INFO  [main](ProcessUtils.java:68) - Java version: 1.8.0_382
+2023-08-24 18:04:09,937 INFO  [main](AlluxioMasterProcess.java:203) - Process starting.
+2023-08-24 18:04:09,938 INFO  [main](RpcServerService.java:87) - Starting RpcServerService
+2023-08-24 18:04:09,961 INFO  [main](PrimaryOnlyWebServerService.java:43) - Starting PrimaryOnlyWebServerService
+2023-08-24 18:04:09,972 INFO  [main](PrimaryOnlyMetricsService.java:22) - Starting PrimaryOnlyMetricsService
+2023-08-24 18:04:09,973 INFO  [main](JvmMonitorService.java:44) - Starting JvmMonitorService
+2023-08-24 18:04:09,990 INFO  [main](RaftJournalSystem.java:779) - Initializing Raft Journal System
+2023-08-24 18:04:10,002 INFO  [main](RaftJournalSystem.java:789) - Starting Raft journal system. Cluster addresses: [alluxio-master1:19200, alluxio-master2:19200, alluxio-master3:19200]. Local address: alluxio-master1:19200
+2023-08-24 18:04:10,015 INFO  [main](JournalStateMachine.java:160) - Ihe max concurrency for notifyTermIndexUpdated is loading with max threads 256
+2023-08-24 18:04:10,017 INFO  [main](RocksStore.java:139) - Closing BlockStore rocks database
+2023-08-24 18:04:10,044 INFO  [main](RocksStore.java:195) - Opened rocks database under path /opt/alluxio-2.9.3/metastore/blocks
+2023-08-24 18:04:10,044 INFO  [main](RocksStore.java:129) - Cleared store at /opt/alluxio-2.9.3/metastore/blocks
+2023-08-24 18:04:10,045 INFO  [main](RocksStore.java:139) - Closing InodeStore rocks database
+2023-08-24 18:04:10,078 INFO  [main](RocksStore.java:195) - Opened rocks database under path /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:04:10,078 INFO  [main](RocksStore.java:129) - Cleared store at /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:04:10,079 INFO  [main](JournalStateMachine.java:166) - Initialized new journal state machine
+2023-08-24 18:04:10,137 INFO  [main](MetricRegistriesLoader.java:64) - Loaded MetricRegistries class org.apache.ratis.metrics.impl.MetricRegistriesImpl
+2023-08-24 18:04:10,166 INFO  [main](ConfUtils.java:46) - raft.rpc.type = GRPC (default)
+2023-08-24 18:04:10,231 INFO  [main](ConfUtils.java:53) - raft.grpc.admin.host = null (fallback to raft.grpc.server.host)
+2023-08-24 18:04:10,233 INFO  [main](ConfUtils.java:53) - raft.grpc.admin.port = 19200 (fallback to raft.grpc.server.port)
+2023-08-24 18:04:10,233 INFO  [main](ConfUtils.java:53) - raft.grpc.client.host = null (fallback to raft.grpc.server.host)
+2023-08-24 18:04:10,233 INFO  [main](ConfUtils.java:53) - raft.grpc.client.port = 19200 (fallback to raft.grpc.server.port)
+2023-08-24 18:04:10,234 INFO  [main](ConfUtils.java:46) - raft.grpc.server.host = null (default)
+2023-08-24 18:04:10,234 INFO  [main](ConfUtils.java:46) - raft.grpc.server.port = 19200 (custom)
+2023-08-24 18:04:10,234 INFO  [main](ConfUtils.java:46) - raft.grpc.message.size.max = 104857600 (custom)
+2023-08-24 18:04:10,235 INFO  [main](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:04:10,236 INFO  [main](ConfUtils.java:46) - raft.grpc.flow.control.window = 1MB (=1048576) (default)
+2023-08-24 18:04:10,236 INFO  [main](ConfUtils.java:46) - raft.server.rpc.request.timeout = 5000ms (custom)
+2023-08-24 18:04:10,245 INFO  [main](ConfUtils.java:46) - raft.grpc.server.heartbeat.channel = true (default)
+2023-08-24 18:04:10,247 INFO  [main](ConfUtils.java:46) - raft.grpc.server.async.request.thread.pool.cached = true (default)
+2023-08-24 18:04:10,248 INFO  [main](ConfUtils.java:46) - raft.grpc.server.async.request.thread.pool.size = 32 (default)
+2023-08-24 18:04:10,379 INFO  [main](ConfUtils.java:46) - raft.datastream.type = DISABLED (default)
+2023-08-24 18:04:10,380 INFO  [main](ConfUtils.java:46) - raft.server.threadpool.proxy.cached = true (default)
+2023-08-24 18:04:10,380 INFO  [main](ConfUtils.java:46) - raft.server.threadpool.proxy.size = 0 (default)
+2023-08-24 18:04:10,380 INFO  [main](ConfUtils.java:46) - raft.server.rpc.slowness.timeout = 9223372036854775807ms (custom)
+2023-08-24 18:04:10,381 INFO  [main](ConfUtils.java:46) - raft.server.leaderelection.leader.step-down.wait-time = 9223372036854775807ms (custom)
+2023-08-24 18:04:10,383 INFO  [main](ConfUtils.java:46) - raft.server.storage.dir = [/opt/alluxio-2.9.3/journal/raft] (custom)
+2023-08-24 18:04:10,388 INFO  [main](RaftServerProxy.java:96) - alluxio-master1_19200: addNew group-ABB3109A44C1:[alluxio-master2_19200|rpc:alluxio-master2:19200|priority:0|startupRole:FOLLOWER, alluxio-master1_19200|rpc:alluxio-master1:19200|priority:0|startupRole:FOLLOWER, alluxio-master3_19200|rpc:alluxio-master3:19200|priority:0|startupRole:FOLLOWER] returns group-ABB3109A44C1:java.util.concurrent.CompletableFuture@45d84a20[Not completed]
+2023-08-24 18:04:10,408 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.rpc.timeout.min = 10000ms (custom)
+2023-08-24 18:04:10,409 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.rpc.timeout.max = 20000ms (custom)
+2023-08-24 18:04:10,409 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.rpc.sleep.time = 25ms (default)
+2023-08-24 18:04:10,409 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.rpc.slowness.timeout = 9223372036854775807ms (custom)
+2023-08-24 18:04:10,409 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.leaderelection.leader.step-down.wait-time = 9223372036854775807ms (custom)
+2023-08-24 18:04:10,410 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.sleep.deviation.threshold = 300ms (default)
+2023-08-24 18:04:10,420 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.storage.dir = [/opt/alluxio-2.9.3/journal/raft] (custom)
+2023-08-24 18:04:10,426 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.log.corruption.policy = EXCEPTION (default)
+2023-08-24 18:04:10,427 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.storage.free-space.min = 0MB (=0) (default)
+2023-08-24 18:04:10,436 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.notification.no-leader.timeout = 60s (default)
+2023-08-24 18:04:10,440 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.retrycache.expirytime = 60000ms (default)
+2023-08-24 18:04:10,440 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.retrycache.statistics.expirytime = 100?s (default)
+2023-08-24 18:04:10,480 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.log.appender.install.snapshot.enabled = false (custom)
+2023-08-24 18:04:10,481 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.threadpool.server.cached = true (default)
+2023-08-24 18:04:10,481 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.threadpool.server.size = 0 (default)
+2023-08-24 18:04:10,481 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.threadpool.client.cached = true (default)
+2023-08-24 18:04:10,482 INFO  [pool-16-thread-1](ConfUtils.java:46) - raft.server.threadpool.client.size = 0 (default)
+2023-08-24 18:04:10,483 INFO  [alluxio-master1_19200-impl-thread1](RaftStorageDirectoryImpl.java:137) - The storage directory /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1 does not exist. Creating ...
+2023-08-24 18:04:10,493 INFO  [alluxio-master1_19200-impl-thread1](RaftStorageDirectoryImpl.java:231) - Lock on /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/in_use.lock acquired by nodename 163@alluxio-master1
+2023-08-24 18:04:10,507 INFO  [alluxio-master1_19200-impl-thread1](RaftStorageImpl.java:96) - Storage directory /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1 has been successfully formatted.
+2023-08-24 18:04:10,509 INFO  [alluxio-master1_19200-impl-thread1](JournalStateMachine.java:231) - No snapshot to load
+2023-08-24 18:04:10,511 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.use.memory = false (default)
+2023-08-24 18:04:10,522 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.purge.gap = 1 (custom)
+2023-08-24 18:04:10,522 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:04:10,524 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.read.timeout = 1000ms (default)
+2023-08-24 18:04:10,525 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.purge.preservation.log.num = 0 (default)
+2023-08-24 18:04:10,528 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.size.max = 10485760 (custom)
+2023-08-24 18:04:10,535 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.cache.num.max = 6 (default)
+2023-08-24 18:04:10,536 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.cache.size.max = 200MB (=209715200) (default)
+2023-08-24 18:04:10,542 INFO  [alluxio-master1_19200-impl-thread1](SegmentedRaftLogWorker.java:189) - new alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker for RaftStorageImpl:Storage Directory /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1
+2023-08-24 18:04:10,548 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.queue.byte-limit = 167772160 (custom)
+2023-08-24 18:04:10,548 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.queue.element-limit = 4096 (default)
+2023-08-24 18:04:10,550 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.size.max = 10485760 (custom)
+2023-08-24 18:04:10,550 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.preallocated.size = 4MB (=4194304) (default)
+2023-08-24 18:04:10,551 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.force.sync.num = 128 (default)
+2023-08-24 18:04:10,552 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.sync = true (default)
+2023-08-24 18:04:10,552 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.sync.timeout = 10s (default)
+2023-08-24 18:04:10,552 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.sync.timeout.retry = -1 (default)
+2023-08-24 18:04:10,555 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.write.buffer.size = 64KB (=65536) (default)
+2023-08-24 18:04:10,555 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:04:10,557 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.unsafe-flush.enabled = false (default)
+2023-08-24 18:04:10,558 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.async-flush.enabled = false (default)
+2023-08-24 18:04:10,558 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.caching.enabled = false (default)
+2023-08-24 18:04:10,566 INFO  [alluxio-master1_19200-impl-thread1](SegmentedRaftLogWorker.java:135) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: flushIndex: setUnconditionally 0 -> -1
+2023-08-24 18:04:10,566 INFO  [alluxio-master1_19200-impl-thread1](SegmentedRaftLogWorker.java:135) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: safeCacheEvictIndex: setUnconditionally 0 -> -1
+2023-08-24 18:04:10,569 INFO  [alluxio-master1_19200-impl-thread1](RoleInfo.java:139) - alluxio-master1_19200: start alluxio-master1_19200@group-ABB3109A44C1-FollowerState
+2023-08-24 18:04:10,570 INFO  [alluxio-master1_19200@group-ABB3109A44C1-FollowerState](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.min = 10000ms (fallback to raft.server.rpc.timeout.min)
+2023-08-24 18:04:10,570 INFO  [alluxio-master1_19200@group-ABB3109A44C1-FollowerState](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.max = 20000ms (fallback to raft.server.rpc.timeout.max)
+2023-08-24 18:04:10,619 INFO  [alluxio-master1_19200-impl-thread1](JmxRegister.java:44) - Successfully registered JMX Bean with object name Ratis:service=RaftServer,group=group-ABB3109A44C1,id=alluxio-master1_19200
+2023-08-24 18:04:10,622 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.snapshot.auto.trigger.enabled = true (custom)
+2023-08-24 18:04:10,622 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.snapshot.auto.trigger.threshold = 2000000 (custom)
+2023-08-24 18:04:10,622 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.snapshot.retention.file.num = 3 (custom)
+2023-08-24 18:04:10,623 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.purge.upto.snapshot.index = true (custom)
+2023-08-24 18:04:10,625 INFO  [main](RaftServerProxy.java:393) - alluxio-master1_19200: start RPC server
+2023-08-24 18:04:10,701 INFO  [main](GrpcService.java:270) - alluxio-master1_19200: GrpcService started, listening on 19200
+2023-08-24 18:04:10,704 INFO  [main](RaftJournalSystem.java:795) - Started Raft Journal System in 315ms
+2023-08-24 18:04:10,704 INFO  [JvmPauseMonitor0](JvmPauseMonitor.java:105) - JvmPauseMonitor-alluxio-master1_19200: Started
+2023-08-24 18:04:10,925 INFO  [main](AlluxioMasterProcess.java:396) - Starting all master components as: follower.
+2023-08-24 18:04:10,936 INFO  [main](MetricsSystem.java:969) - Reset all metrics in the metrics system in 3ms
+2023-08-24 18:04:10,936 INFO  [main](MetricsStore.java:256) - Cleared the metrics store and metrics system in 3 ms
+2023-08-24 18:04:10,939 INFO  [main](DefaultMetaMaster.java:351) - Standby master with address alluxio-master1:19998 starts sending heartbeat to leader master.
+2023-08-24 18:04:10,969 INFO  [main](BackupTracker.java:66) - Resetting backup tracker.
+2023-08-24 18:04:10,975 INFO  [main](BackupWorkerRole.java:90) - Creating backup-worker role.
+2023-08-24 18:04:10,976 INFO  [main](AlluxioMasterProcess.java:413) - All masters started.
+2023-08-24 18:04:10,976 INFO  [main](AlluxioMasterProcess.java:212) - Waiting for journals to catch up.
+2023-08-24 18:04:10,976 INFO  [main](AlluxioMasterProcess.java:216) - Starting leader selector.
+2023-08-24 18:04:10,976 INFO  [main](AlluxioMasterProcess.java:225) - Waiting for journals to catch up.
+2023-08-24 18:04:10,977 INFO  [main](AlluxioMasterProcess.java:229) - Started in stand-by mode.
+2023-08-24 18:04:11,017 INFO  [Meta Master Sync](NettyUtils.java:146) - EPOLL_MODE is available
+2023-08-24 18:04:22,023 INFO  [alluxio-master1_19200@group-ABB3109A44C1-FollowerState](FollowerState.java:143) - alluxio-master1_19200@group-ABB3109A44C1-FollowerState: change to CANDIDATE, lastRpcElapsedTime:11454351630ns, electionTimeout:11451ms
+2023-08-24 18:04:22,024 INFO  [alluxio-master1_19200@group-ABB3109A44C1-FollowerState](RoleInfo.java:110) - alluxio-master1_19200: shutdown alluxio-master1_19200@group-ABB3109A44C1-FollowerState
+2023-08-24 18:04:22,032 INFO  [alluxio-master1_19200@group-ABB3109A44C1-FollowerState](ConfUtils.java:46) - raft.server.leaderelection.pre-vote = true (default)
+2023-08-24 18:04:22,032 INFO  [alluxio-master1_19200@group-ABB3109A44C1-FollowerState](RoleInfo.java:139) - alluxio-master1_19200: start alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1
+2023-08-24 18:04:22,035 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:312) - alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1 PRE_VOTE round 0: submit vote requests at term 0 for -1: peers:[alluxio-master2_19200|rpc:alluxio-master2:19200|priority:0|startupRole:FOLLOWER, alluxio-master1_19200|rpc:alluxio-master1:19200|priority:0|startupRole:FOLLOWER, alluxio-master3_19200|rpc:alluxio-master3:19200|priority:0|startupRole:FOLLOWER]|listeners:[], old=null
+2023-08-24 18:04:22,045 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.min = 10000ms (fallback to raft.server.rpc.timeout.min)
+2023-08-24 18:04:22,045 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.max = 20000ms (fallback to raft.server.rpc.timeout.max)
+2023-08-24 18:04:22,046 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1-2](GrpcServerProtocolClient.java:63) - Build channel for alluxio-master3_19200
+2023-08-24 18:04:22,046 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1-1](GrpcServerProtocolClient.java:63) - Build channel for alluxio-master2_19200
+2023-08-24 18:04:22,090 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:90) - alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1: PRE_VOTE PASSED received 1 response(s) and 0 exception(s):
+2023-08-24 18:04:22,091 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:94) -   Response 0: alluxio-master1_19200<-alluxio-master3_19200#0:OK-t0
+2023-08-24 18:04:22,092 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:314) - alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1 PRE_VOTE round 0: result PASSED
+2023-08-24 18:04:22,094 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:312) - alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1 ELECTION round 0: submit vote requests at term 1 for -1: peers:[alluxio-master2_19200|rpc:alluxio-master2:19200|priority:0|startupRole:FOLLOWER, alluxio-master1_19200|rpc:alluxio-master1:19200|priority:0|startupRole:FOLLOWER, alluxio-master3_19200|rpc:alluxio-master3:19200|priority:0|startupRole:FOLLOWER]|listeners:[], old=null
+2023-08-24 18:04:22,095 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.min = 10000ms (fallback to raft.server.rpc.timeout.min)
+2023-08-24 18:04:22,095 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.max = 20000ms (fallback to raft.server.rpc.timeout.max)
+2023-08-24 18:04:22,105 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:90) - alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1: ELECTION PASSED received 1 response(s) and 0 exception(s):
+2023-08-24 18:04:22,105 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:94) -   Response 0: alluxio-master1_19200<-alluxio-master3_19200#0:OK-t1
+2023-08-24 18:04:22,105 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:314) - alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1 ELECTION round 0: result PASSED
+2023-08-24 18:04:22,105 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](RoleInfo.java:130) - alluxio-master1_19200: shutdown alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1
+2023-08-24 18:04:22,107 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](AbstractPrimarySelector.java:59) - Primary selector transitioning to PRIMARY
+2023-08-24 18:04:22,107 INFO  [main](AlluxioMasterProcess.java:292) - Becoming a leader.
+2023-08-24 18:04:22,109 INFO  [main](AlluxioMasterProcess.java:421) - Stopping all masters components.
+2023-08-24 18:04:22,109 INFO  [main](AbstractMaster.java:124) - ThrottleMaster: Stopped standby master.
+2023-08-24 18:04:22,110 INFO  [main](BackupWorkerRole.java:110) - Closing backup-worker role.
+2023-08-24 18:04:22,110 INFO  [main](BackupTracker.java:66) - Resetting backup tracker.
+2023-08-24 18:04:22,110 WARN  [backup-executor-0](BackupWorkerRole.java:374) - Failed to get backup-leader address. Error:alluxio.exception.status.UnavailableException: Failed to determine primary master rpc address after polling each of [alluxio-master1:19998, alluxio-master2:19998, alluxio-master3:19998] 9 times. Attempt:1
+2023-08-24 18:04:22,111 WARN  [Meta Master Sync](AbstractClient.java:468) - GetId(address=alluxio-master1:19998) exits with exception [alluxio.exception.status.UnavailableException: Failed to determine address for MetaMasterMaster after 1 attempts] in 11170 ms (>=10000ms)
+2023-08-24 18:04:22,112 ERROR [Meta Master Sync](MetaMasterSync.java:76) - Failed to receive leader master heartbeat command.
+alluxio.exception.status.UnavailableException: Failed to determine address for MetaMasterMaster after 1 attempts
+	at alluxio.AbstractClient.connect(AbstractClient.java:298)
+	at alluxio.AbstractClient.retryRPCInternal(AbstractClient.java:482)
+	at alluxio.AbstractClient.retryRPC(AbstractClient.java:450)
+	at alluxio.AbstractClient.retryRPC(AbstractClient.java:439)
+	at alluxio.master.meta.RetryHandlingMetaMasterMasterClient.getId(RetryHandlingMetaMasterMasterClient.java:86)
+	at alluxio.master.meta.MetaMasterSync.setIdAndRegister(MetaMasterSync.java:113)
+	at alluxio.master.meta.MetaMasterSync.heartbeat(MetaMasterSync.java:69)
+	at alluxio.heartbeat.HeartbeatThread.run(HeartbeatThread.java:128)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:04:22,116 INFO  [main](AbstractMaster.java:124) - MetaMaster: Stopped standby master.
+2023-08-24 18:04:22,116 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.staging.catchup.gap = 1000 (default)
+2023-08-24 18:04:22,116 INFO  [main](AbstractMaster.java:124) - MetricsMaster: Stopped standby master.
+2023-08-24 18:04:22,116 INFO  [main](AbstractMaster.java:124) - JournalMaster: Stopped standby master.
+2023-08-24 18:04:22,117 INFO  [main](DefaultFileSystemMaster.java:785) - Next directory id before close: 0
+2023-08-24 18:04:22,117 INFO  [main](AbstractMaster.java:124) - FileSystemMaster: Stopped standby master.
+2023-08-24 18:04:22,118 INFO  [main](DefaultBlockMaster.java:538) - Next container id before close: 0
+2023-08-24 18:04:22,118 INFO  [main](AbstractMaster.java:124) - BlockMaster: Stopped standby master.
+2023-08-24 18:04:22,118 INFO  [main](AlluxioMasterProcess.java:423) - All master components stopped.
+2023-08-24 18:04:22,119 INFO  [main](AlluxioMasterProcess.java:301) - Standby stopped
+2023-08-24 18:04:22,119 INFO  [main](RaftJournalSystem.java:525) - Gaining primacy.
+2023-08-24 18:04:22,122 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.write.element-limit = 4096 (default)
+2023-08-24 18:04:22,123 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.write.byte-limit = 167772160 (custom)
+2023-08-24 18:04:22,140 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.watch.timeout = 10s (default)
+2023-08-24 18:04:22,143 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.watch.timeout.denomination = 1s (default)
+2023-08-24 18:04:22,145 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.watch.element-limit = 65536 (default)
+2023-08-24 18:04:22,157 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.write.element-limit = 4096 (default)
+2023-08-24 18:04:22,160 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.write.follower.gap.ratio.max = -1.0 (default)
+2023-08-24 18:04:22,168 INFO  [main](RaftJournalSystem.java:725) - Performing catchup. Last applied SN: -1. Catchup ID: -7892992828712207955
+2023-08-24 18:04:22,173 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.snapshot.chunk.size.max = 16MB (=16777216) (default)
+2023-08-24 18:04:22,174 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:04:22,174 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.buffer.element-limit = 0 (default)
+2023-08-24 18:04:22,177 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.grpc.server.leader.outstanding.appends.max = 128 (default)
+2023-08-24 18:04:22,178 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.rpc.request.timeout = 5000ms (custom)
+2023-08-24 18:04:22,178 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.install.snapshot.enabled = false (custom)
+2023-08-24 18:04:22,178 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.grpc.server.heartbeat.channel = true (default)
+2023-08-24 18:04:22,178 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.wait-time.min = 10ms (default)
+2023-08-24 18:04:22,180 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.snapshot.chunk.size.max = 16MB (=16777216) (default)
+2023-08-24 18:04:22,180 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:04:22,181 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.buffer.element-limit = 0 (default)
+2023-08-24 18:04:22,181 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.grpc.server.leader.outstanding.appends.max = 128 (default)
+2023-08-24 18:04:22,181 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.rpc.request.timeout = 5000ms (custom)
+2023-08-24 18:04:22,181 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.install.snapshot.enabled = false (custom)
+2023-08-24 18:04:22,181 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.grpc.server.heartbeat.channel = true (default)
+2023-08-24 18:04:22,181 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](ConfUtils.java:46) - raft.server.log.appender.wait-time.min = 10ms (default)
+2023-08-24 18:04:22,183 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](RoleInfo.java:139) - alluxio-master1_19200: start alluxio-master1_19200@group-ABB3109A44C1-LeaderStateImpl
+2023-08-24 18:04:22,197 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderElection1](SegmentedRaftLogWorker.java:452) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: Starting segment from index:0
+2023-08-24 18:04:22,370 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:656) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: created new log segment /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_inprogress_0
+2023-08-24 18:04:23,251 INFO  [main](RaftJournalSystem.java:725) - Performing catchup. Last applied SN: -1. Catchup ID: -5849832574702425201
+2023-08-24 18:04:23,296 INFO  [main](RaftJournalSystem.java:767) - Caught up in 1174ms. Last sequence number from previous term: -1.
+2023-08-24 18:04:23,302 INFO  [main](RaftJournalSystem.java:554) - Gained primacy.
+2023-08-24 18:04:23,302 INFO  [main](AlluxioMasterProcess.java:396) - Starting all master components as: leader.
+2023-08-24 18:04:23,303 INFO  [main](AbstractMaster.java:97) - BlockMaster: Starting primary master.
+2023-08-24 18:04:23,306 INFO  [main](AbstractMaster.java:97) - FileSystemMaster: Starting primary master.
+2023-08-24 18:04:23,307 INFO  [main](DefaultFileSystemMaster.java:630) - Starting fs master as primary
+2023-08-24 18:04:23,532 INFO  [main](RocksStore.java:139) - Closing InodeStore rocks database
+2023-08-24 18:04:23,569 INFO  [main](RocksStore.java:195) - Opened rocks database under path /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:04:23,569 INFO  [main](RocksStore.java:129) - Cleared store at /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:04:23,635 INFO  [main](AbstractMaster.java:97) - JournalMaster: Starting primary master.
+2023-08-24 18:04:23,635 INFO  [main](AbstractMaster.java:97) - MetricsMaster: Starting primary master.
+2023-08-24 18:04:23,637 INFO  [main](MetricsSystem.java:969) - Reset all metrics in the metrics system in 1ms
+2023-08-24 18:04:23,637 INFO  [main](MetricsStore.java:256) - Cleared the metrics store and metrics system in 1 ms
+2023-08-24 18:04:23,638 INFO  [main](AbstractMaster.java:97) - MetaMaster: Starting primary master.
+2023-08-24 18:04:23,653 WARN  [scheduler](Scheduler.java:241) - Failed to get worker info, using existing worker infos of 0 workers
+2023-08-24 18:04:23,663 INFO  [main](DefaultMetaMaster.java:328) - Created new cluster ID 2cb8cd93-d112-412b-a58d-42622f2d5581
+2023-08-24 18:04:23,677 INFO  [main](BackupTracker.java:66) - Resetting backup tracker.
+2023-08-24 18:04:23,678 INFO  [main](BackupLeaderRole.java:98) - Creating backup-leader role.
+2023-08-24 18:04:23,678 INFO  [main](AbstractMaster.java:97) - ThrottleMaster: Starting primary master.
+2023-08-24 18:04:23,678 INFO  [main](DefaultThrottleMaster.java:109) - Starting ThrottleMaster
+2023-08-24 18:04:23,678 INFO  [main](DefaultThrottleMaster.java:115) - ThrottleMaster is started
+2023-08-24 18:04:23,679 INFO  [main](AlluxioMasterProcess.java:413) - All masters started.
+2023-08-24 18:04:23,679 INFO  [main](RpcServerService.java:93) - Promoting RpcServerService
+2023-08-24 18:04:23,817 INFO  [main](RpcServerService.java:111) - registered service BLOCK_MASTER_CLIENT_SERVICE
+2023-08-24 18:04:23,817 INFO  [main](RpcServerService.java:111) - registered service BLOCK_MASTER_WORKER_SERVICE
+2023-08-24 18:04:23,907 INFO  [main](RpcServerService.java:111) - registered service FILE_SYSTEM_MASTER_JOB_SERVICE
+2023-08-24 18:04:23,908 INFO  [main](RpcServerService.java:111) - registered service FILE_SYSTEM_MASTER_WORKER_SERVICE
+2023-08-24 18:04:23,908 INFO  [main](RpcServerService.java:111) - registered service FILE_SYSTEM_MASTER_CLIENT_SERVICE
+2023-08-24 18:04:23,927 INFO  [main](RpcServerService.java:111) - registered service JOURNAL_MASTER_CLIENT_SERVICE
+2023-08-24 18:04:23,940 INFO  [main](RpcServerService.java:111) - registered service METRICS_MASTER_CLIENT_SERVICE
+2023-08-24 18:04:23,977 INFO  [main](RpcServerService.java:111) - registered service META_MASTER_BACKUP_MESSAGING_SERVICE
+2023-08-24 18:04:23,977 INFO  [main](RpcServerService.java:111) - registered service META_MASTER_MASTER_SERVICE
+2023-08-24 18:04:23,977 INFO  [main](RpcServerService.java:111) - registered service META_MASTER_CLIENT_SERVICE
+2023-08-24 18:04:23,977 INFO  [main](RpcServerService.java:111) - registered service RAFT_JOURNAL_SERVICE
+2023-08-24 18:04:23,978 INFO  [main](RpcServerService.java:111) - registered service META_MASTER_CONFIG_SERVICE
+2023-08-24 18:04:23,998 INFO  [main](DefaultSafeModeManager.java:64) - Rpc server started, waiting 5000ms for workers to register
+2023-08-24 18:04:23,998 INFO  [main](PrimaryOnlyWebServerService.java:49) - Promoting PrimaryOnlyWebServerService
+2023-08-24 18:04:23,999 INFO  [main](WebServerService.java:52) - Starting web server.
+2023-08-24 18:04:24,155 INFO  [main](Log.java:170) - Logging initialized @15489ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-08-24 18:04:24,301 INFO  [main](TieredIdentityFactory.java:62) - Initialized tiered identity TieredIdentity(node=alluxio-master1, rack=null)
+2023-08-24 18:04:24,306 INFO  [main](WebServer.java:209) - Alluxio Master Web service starting @ /0.0.0.0:19999
+2023-08-24 18:04:24,307 INFO  [main](Server.java:375) - jetty-9.4.46.v20220331; built: 2022-03-31T16:38:08.030Z; git: bc17a0369a11ecf40bb92c839b9ef0a8ac50ea18; jvm 1.8.0_382-b05
+2023-08-24 18:04:24,330 INFO  [main](ContextHandler.java:921) - Started o.e.j.s.ServletContextHandler@1e411d81{/metrics/json,null,AVAILABLE}
+2023-08-24 18:04:24,330 INFO  [main](ContextHandler.java:921) - Started o.e.j.s.ServletContextHandler@53b98ff6{/metrics/prometheus,null,AVAILABLE}
+2023-08-24 18:04:24,331 WARN  [main](ConstraintSecurityHandler.java:759) - ServletContext@o.e.j.s.ServletContextHandler@75504cef{/,file:///opt/alluxio-2.9.3/webui/master/build,STARTING} has uncovered http methods for path: /
+2023-08-24 18:04:24,754 INFO  [backup-context-1](BackupLeaderRole.java:225) - Backup-leader connected with backup-worker: GrpcMessagingServerConnection{ConnectionOwner=SERVER, ConnectionId=1, TransportId=GrpcMessagingServiceClientHandler{ServerAddress=alluxio-master1:19998, ClientAddress=/172.19.0.3:41112}}
+2023-08-24 18:04:24,774 INFO  [master-rpc-executor-TPE-thread-56](DefaultMetaMaster.java:565) - getMasterId(): MasterAddress: alluxio-master2:19998 id: 6231872582444569204
+2023-08-24 18:04:24,782 INFO  [backup-context-1](BackupLeaderRole.java:325) - Received handshake message:BackupHandshakeMessage{BackupWorkerHostName=alluxio-master2}
+2023-08-24 18:04:24,794 INFO  [backup-context-1](BackupLeaderRole.java:225) - Backup-leader connected with backup-worker: GrpcMessagingServerConnection{ConnectionOwner=SERVER, ConnectionId=2, TransportId=GrpcMessagingServiceClientHandler{ServerAddress=alluxio-master1:19998, ClientAddress=/172.19.0.4:60706}}
+2023-08-24 18:04:24,820 INFO  [backup-context-1](BackupLeaderRole.java:325) - Received handshake message:BackupHandshakeMessage{BackupWorkerHostName=alluxio-master3}
+2023-08-24 18:04:24,830 INFO  [master-rpc-executor-TPE-thread-73](DefaultMetaMaster.java:637) - registerMaster(): master: MasterInfo{id=6231872582444569204, address=alluxio-master2:19998, lastUpdatedTimeMs=1692900264827, startTimeMs=1692900249447, losePrimacyTimeMs=0, version=2.9.4-SNAPSHOT, revision=95dfd109de128cee94106d430c015698770a4591}
+2023-08-24 18:04:24,960 INFO  [master-rpc-executor-TPE-thread-123](DefaultMetaMaster.java:565) - getMasterId(): MasterAddress: alluxio-master3:19998 id: 4260269805660345224
+2023-08-24 18:04:25,006 INFO  [master-rpc-executor-TPE-thread-132](DefaultMetaMaster.java:637) - registerMaster(): master: MasterInfo{id=4260269805660345224, address=alluxio-master3:19998, lastUpdatedTimeMs=1692900265005, startTimeMs=1692900249814, losePrimacyTimeMs=0, version=2.9.4-SNAPSHOT, revision=95dfd109de128cee94106d430c015698770a4591}
+2023-08-24 18:04:25,155 INFO  [master-rpc-executor-TPE-thread-223](DefaultBlockMaster.java:1137) - Worker WorkerNetAddress{host=alluxio-worker, containerHost=, rpcPort=29999, dataPort=29999, webPort=30000, domainSocketPath=, tieredIdentity=TieredIdentity(node=alluxio-worker, rack=null)} requesting for an ID
+2023-08-24 18:04:25,162 INFO  [master-rpc-executor-TPE-thread-223](DefaultBlockMaster.java:1156) - getWorkerId(): WorkerNetAddress: WorkerNetAddress{host=alluxio-worker, containerHost=, rpcPort=29999, dataPort=29999, webPort=30000, domainSocketPath=, tieredIdentity=TieredIdentity(node=alluxio-worker, rack=null)} id: 720781237885360920
+2023-08-24 18:04:25,266 INFO  [master-rpc-executor-TPE-thread-231](RegisterStreamObserver.java:148) - Register stream completed on the client side
+2023-08-24 18:04:25,267 INFO  [master-rpc-executor-TPE-thread-231](DefaultBlockMaster.java:1358) - Found 0 blocks to remove from the workerInfo
+2023-08-24 18:04:25,269 INFO  [master-rpc-executor-TPE-thread-231](DefaultBlockMaster.java:1370) - Worker successfully registered: MasterWorkerInfo{id=720781237885360920, workerAddress=WorkerNetAddress{host=alluxio-worker, containerHost=, rpcPort=29999, dataPort=29999, webPort=30000, domainSocketPath=, tieredIdentity=TieredIdentity(node=alluxio-worker, rack=null)}, capacityBytes=1073741824, usedBytes=0, lastUpdatedTimeMs=1692900265269, blocks=LongOpenHashSet{0 entries}, lostStorage={}, version=2.9.4-SNAPSHOT, revision=95dfd109de128cee94106d430c015698770a4591}
+2023-08-24 18:04:25,270 INFO  [master-rpc-executor-TPE-thread-231](RegisterLeaseManager.java:109) - Worker 720781237885360920's lease is not found. Most likely the lease has already been recycled.
+2023-08-24 18:04:26,459 WARN  [metrics-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.size is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:26,466 WARN  [metrics-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.expiration.time is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:31,713 WARN  [Master Persistence Scheduler](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.size is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:31,714 WARN  [Master Persistence Scheduler](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.expiration.time is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:35,834 WARN  [Master Persistence Scheduler](SleepingTimer.java:86) - Master Persistence Scheduler last execution took 1089 ms. Longer than the interval 1000
+2023-08-24 18:04:36,468 INFO  [main](ContextHandler.java:921) - Started o.e.j.s.ServletContextHandler@75504cef{/,file:///opt/alluxio-2.9.3/webui/master/build,AVAILABLE}
+2023-08-24 18:04:36,490 INFO  [main](AbstractConnector.java:333) - Started ServerConnector@51b01960{HTTP/1.1, (http/1.1)}{0.0.0.0:19999}
+2023-08-24 18:04:36,490 INFO  [main](Server.java:415) - Started @27825ms
+2023-08-24 18:04:36,490 INFO  [main](WebServer.java:211) - Alluxio Master Web service started @ /0.0.0.0:19999
+2023-08-24 18:04:36,490 INFO  [main](PrimaryOnlyMetricsService.java:27) - Promoting PrimaryOnlyMetricsService
+2023-08-24 18:04:36,490 INFO  [main](MetricsService.java:29) - Start metric sinks.
+2023-08-24 18:04:36,491 INFO  [main](AlluxioMasterProcess.java:240) - Primary started
+2023-08-24 18:04:50,720 INFO  [Master Update Check](UpdateChecker.java:60) - The latest version (2.9.3) is not the same as the current version (2.9.4-SNAPSHOT). To upgrade visit https://www.alluxio.io/download/.
+2023-08-24 18:05:01,976 INFO  [alluxio-master1_19200-client-thread1](SegmentedRaftLogWorker.java:457) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: Rolling segment log-0_73498 to index:73498
+2023-08-24 18:05:01,984 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:613) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: Rolled log segment from /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_inprogress_0 to /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_0-73498
+2023-08-24 18:05:01,993 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:656) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: created new log segment /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_inprogress_73499
+2023-08-24 18:05:20,751 WARN  [JvmPauseMonitor0](JvmPauseMonitor.java:126) - JvmPauseMonitor-alluxio-master1_19200: Detected pause in JVM or host machine (eg GC): pause of approximately 444056020ns.
+GC pool 'PS MarkSweep' had collection(s): count=1 time=507ms
+GC pool 'PS Scavenge' had collection(s): count=1 time=86ms
+2023-08-24 18:05:21,322 WARN  [Master Persistence Scheduler](SleepingTimer.java:86) - Master Persistence Scheduler last execution took 1416 ms. Longer than the interval 1000
+2023-08-24 18:05:26,013 INFO  [alluxio-master1_19200-client-thread1](SegmentedRaftLogWorker.java:457) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: Rolling segment log-73499_144906 to index:144906
+2023-08-24 18:05:26,014 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:613) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: Rolled log segment from /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_inprogress_73499 to /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_73499-144906
+2023-08-24 18:05:26,019 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:656) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: created new log segment /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_inprogress_144907
+2023-08-24 18:05:35,090 WARN  [AsyncJournalWriterThread-Raft](SamplingLogger.java:290) - Failed to flush journal entry: java.util.concurrent.TimeoutException
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:05:35,098 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:05:41,105 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:05:47,121 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:05:53,137 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:05:59,153 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:06:05,162 WARN  [AsyncJournalWriterThread-Raft](SamplingLogger.java:290) - Failed to flush journal entry: java.util.concurrent.TimeoutException
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:06:05,163 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:06:11,166 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:06:17,186 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:06:23,195 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:06:29,204 WARN  [master-rpc-executor-TPE-thread-418](MasterJournalContext.java:94) - Journal flush failed. retrying...
+java.io.IOException: java.util.concurrent.TimeoutException
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:99)
+	at alluxio.master.journal.raft.RaftJournalWriter.flush(RaftJournalWriter.java:139)
+	at alluxio.master.journal.AsyncJournalWriter.doFlush(AsyncJournalWriter.java:322)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at alluxio.master.journal.raft.RaftJournalAppender.sendAsync(RaftJournalAppender.java:90)
+	... 3 more
+2023-08-24 18:06:32,586 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderStateImpl](RoleInfo.java:93) - alluxio-master1_19200: shutdown alluxio-master1_19200@group-ABB3109A44C1-LeaderStateImpl
+2023-08-24 18:06:32,588 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderStateImpl](PendingRequests.java:282) - alluxio-master1_19200@group-ABB3109A44C1-PendingRequests: sendNotLeaderResponses
+2023-08-24 18:06:32,591 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderStateImpl](AbstractPrimarySelector.java:59) - Primary selector transitioning to STANDBY
+2023-08-24 18:06:32,591 WARN  [AsyncJournalWriterThread-Raft](SamplingLogger.java:290) - Failed to flush journal entry: Server alluxio-master1_19200@group-ABB3109A44C1 is not the leader
+org.apache.ratis.protocol.exceptions.NotLeaderException: Server alluxio-master1_19200@group-ABB3109A44C1 is not the leader
+	at org.apache.ratis.server.impl.RaftServerImpl.generateNotLeaderException(RaftServerImpl.java:728)
+	at org.apache.ratis.server.impl.LeaderStateImpl.stop(LeaderStateImpl.java:327)
+	at org.apache.ratis.server.impl.RoleInfo.shutdownLeaderState(RoleInfo.java:94)
+	at org.apache.ratis.server.impl.RaftServerImpl.changeToFollower(RaftServerImpl.java:532)
+	at org.apache.ratis.server.impl.RaftServerImpl.changeToFollowerAndPersistMetadata(RaftServerImpl.java:547)
+	at org.apache.ratis.server.impl.LeaderStateImpl.stepDown(LeaderStateImpl.java:561)
+	at org.apache.ratis.server.impl.LeaderStateImpl.lambda$submitStepDownEvent$8(LeaderStateImpl.java:556)
+	at org.apache.ratis.server.impl.LeaderStateImpl$StateUpdateEvent.execute(LeaderStateImpl.java:118)
+	at org.apache.ratis.server.impl.LeaderStateImpl$EventProcessor.run(LeaderStateImpl.java:634)
+2023-08-24 18:06:32,592 INFO  [main](ProcessUtils.java:189) - Logging metrics and jstack when primary master switches to standby...
+2023-08-24 18:06:32,594 INFO  [alluxio-master1_19200@group-ABB3109A44C1-LeaderStateImpl](RoleInfo.java:139) - alluxio-master1_19200: start alluxio-master1_19200@group-ABB3109A44C1-FollowerState
+2023-08-24 18:06:32,595 INFO  [main](ProcessUtils.java:205) - Started dumping metrics and jstacks into /opt/alluxio-2.9.3/logs
+2023-08-24 18:06:32,595 INFO  [main](AlluxioMasterProcess.java:266) - Losing the leadership.
+2023-08-24 18:06:32,597 INFO  [main](RpcServerService.java:126) - Demoting RpcServerService
+2023-08-24 18:06:32,613 INFO  [main](BackupLeaderRole.java:111) - Closing backup-leader role.
+2023-08-24 18:06:32,634 INFO  [backup-context-1](BackupLeaderRole.java:239) - Backup-worker connection closed for GrpcMessagingServerConnection{ConnectionOwner=SERVER, ConnectionId=2, TransportId=GrpcMessagingServiceClientHandler{ServerAddress=alluxio-master1:19998, ClientAddress=/172.19.0.4:60706}}.
+2023-08-24 18:06:32,636 INFO  [backup-context-1](BackupLeaderRole.java:239) - Backup-worker connection closed for GrpcMessagingServerConnection{ConnectionOwner=SERVER, ConnectionId=1, TransportId=GrpcMessagingServiceClientHandler{ServerAddress=alluxio-master1:19998, ClientAddress=/172.19.0.3:41112}}.
+2023-08-24 18:06:32,638 INFO  [main](BackupTracker.java:66) - Resetting backup tracker.
+2023-08-24 18:06:32,663 ERROR [master-rpc-executor-TPE-thread-418](RpcUtils.java:144) - Exit (Error): CompleteFile: request=path: "/1/25471.txt"
+options {
+  asyncPersistOptions {
+    commonOptions {
+      syncIntervalMs: -1
+      ttl: -1
+      ttlAction: FREE
+      operationId {
+        mostSignificantBits: -7109109209907510996
+        leastSignificantBits: -6683726107681088237
+      }
+    }
+    persistenceWaitTime: 0
+  }
+  commonOptions {
+    operationId {
+      mostSignificantBits: 783013393407561649
+      leastSignificantBits: -5090766341334882722
+    }
+  }
+}
+
+java.lang.RuntimeException: alluxio.exception.status.UnavailableException: Failed to complete request: Server alluxio-master1_19200@group-ABB3109A44C1 is not the leader
+	at alluxio.master.file.meta.LockedInodePath.maybeFlushJournals(LockedInodePath.java:582)
+	at alluxio.master.file.meta.LockedInodePath.close(LockedInodePath.java:562)
+	at alluxio.master.file.DefaultFileSystemMaster.completeFile(DefaultFileSystemMaster.java:1689)
+	at alluxio.master.file.FileSystemMasterClientServiceHandler.lambda$completeFile$3(FileSystemMasterClientServiceHandler.java:198)
+	at alluxio.RpcUtils.callAndReturn(RpcUtils.java:129)
+	at alluxio.RpcUtils.call(RpcUtils.java:87)
+	at alluxio.RpcUtils.call(RpcUtils.java:62)
+	at alluxio.master.file.FileSystemMasterClientServiceHandler.completeFile(FileSystemMasterClientServiceHandler.java:196)
+	at alluxio.grpc.FileSystemMasterClientServiceGrpc$MethodHandlers.invoke(FileSystemMasterClientServiceGrpc.java:2753)
+	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at alluxio.security.authentication.ClientContextServerInjector$1.onHalfClose(ClientContextServerInjector.java:78)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at alluxio.security.authentication.AuthenticatedUserInjector$1.onHalfClose(AuthenticatedUserInjector.java:67)
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:331)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:797)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+	Suppressed: alluxio.exception.status.UnavailableException: Failed to complete request: Server alluxio-master1_19200@group-ABB3109A44C1 is not the leader
+		at alluxio.master.journal.MasterJournalContext.waitForJournalFlush(MasterJournalContext.java:83)
+		at alluxio.master.journal.MasterJournalContext.close(MasterJournalContext.java:109)
+		at alluxio.master.journal.StateChangeJournalContext.close(StateChangeJournalContext.java:55)
+		at alluxio.master.journal.FileSystemMergeJournalContext.close(FileSystemMergeJournalContext.java:91)
+		at alluxio.master.file.RpcContext.closeQuietly(RpcContext.java:141)
+		at alluxio.master.file.RpcContext.close(RpcContext.java:129)
+		... 23 more
+	Caused by: org.apache.ratis.protocol.exceptions.NotLeaderException: Server alluxio-master1_19200@group-ABB3109A44C1 is not the leader
+		at org.apache.ratis.server.impl.RaftServerImpl.generateNotLeaderException(RaftServerImpl.java:728)
+		at org.apache.ratis.server.impl.RaftServerImpl.checkLeaderState(RaftServerImpl.java:693)
+		at org.apache.ratis.server.impl.RaftServerImpl.submitClientRequestAsync(RaftServerImpl.java:832)
+		at org.apache.ratis.server.impl.RaftServerImpl.lambda$null$12(RaftServerImpl.java:815)
+		at org.apache.ratis.util.JavaUtils.callAsUnchecked(JavaUtils.java:117)
+		at org.apache.ratis.server.impl.RaftServerImpl.lambda$executeSubmitClientRequestAsync$13(RaftServerImpl.java:815)
+		at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
+		... 3 more
+Caused by: alluxio.exception.status.UnavailableException: Failed to complete request: Server alluxio-master1_19200@group-ABB3109A44C1 is not the leader
+	at alluxio.master.journal.MasterJournalContext.waitForJournalFlush(MasterJournalContext.java:83)
+	at alluxio.master.journal.MasterJournalContext.flush(MasterJournalContext.java:104)
+	at alluxio.master.journal.StateChangeJournalContext.flush(StateChangeJournalContext.java:49)
+	at alluxio.master.journal.FileSystemMergeJournalContext.flush(FileSystemMergeJournalContext.java:103)
+	at alluxio.master.file.meta.LockedInodePath.maybeFlushJournals(LockedInodePath.java:580)
+	... 24 more
+Caused by: org.apache.ratis.protocol.exceptions.NotLeaderException: Server alluxio-master1_19200@group-ABB3109A44C1 is not the leader
+	at org.apache.ratis.server.impl.RaftServerImpl.generateNotLeaderException(RaftServerImpl.java:728)
+	at org.apache.ratis.server.impl.LeaderStateImpl.stop(LeaderStateImpl.java:327)
+	at org.apache.ratis.server.impl.RoleInfo.shutdownLeaderState(RoleInfo.java:94)
+	at org.apache.ratis.server.impl.RaftServerImpl.changeToFollower(RaftServerImpl.java:532)
+	at org.apache.ratis.server.impl.RaftServerImpl.changeToFollowerAndPersistMetadata(RaftServerImpl.java:547)
+	at org.apache.ratis.server.impl.LeaderStateImpl.stepDown(LeaderStateImpl.java:561)
+	at org.apache.ratis.server.impl.LeaderStateImpl.lambda$submitStepDownEvent$8(LeaderStateImpl.java:556)
+	at org.apache.ratis.server.impl.LeaderStateImpl$StateUpdateEvent.execute(LeaderStateImpl.java:118)
+	at org.apache.ratis.server.impl.LeaderStateImpl$EventProcessor.run(LeaderStateImpl.java:634)
+2023-08-24 18:06:32,700 INFO  [info-dumper-1](ProcessUtils.java:247) - Dumped jstack of current process in 105ms to alluxio-master-failover-stacks-20230824-180632.txt
+2023-08-24 18:06:32,700 WARN  [grpc-default-worker-ELG-3-8](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@6c1d4d6c rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Shutting down, pool size = 34, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.tryPromise(Http2CodecUtil.java:385)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.tryFailure(Http2CodecUtil.java:306)
+	at io.netty.util.internal.PromiseNotificationUtil.tryFailure(PromiseNotificationUtil.java:64)
+	at io.netty.channel.ChannelOutboundBuffer.safeFail(ChannelOutboundBuffer.java:723)
+	at io.netty.channel.ChannelOutboundBuffer.remove0(ChannelOutboundBuffer.java:308)
+	at io.netty.channel.ChannelOutboundBuffer.failFlushed(ChannelOutboundBuffer.java:660)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:741)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:946)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.flush0(AbstractEpollChannel.java:519)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:898)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.flush(Http2ConnectionHandler.java:189)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.channel.DefaultChannelPipeline.flush(DefaultChannelPipeline.java:967)
+	at io.netty.channel.AbstractChannel.flush(AbstractChannel.java:242)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:147)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,700 WARN  [grpc-default-worker-ELG-3-4](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@561a2a01 rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Shutting down, pool size = 44, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.setPromise(Http2CodecUtil.java:375)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.doneAllocatingPromises(Http2CodecUtil.java:294)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeadersInternal(DefaultHttp2FrameWriter.java:549)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeaders(DefaultHttp2FrameWriter.java:260)
+	at io.netty.handler.codec.http2.Http2OutboundFrameLogger.writeHeaders(Http2OutboundFrameLogger.java:51)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler$WriteMonitoringFrameWriter.writeHeaders(NettyServerHandler.java:1040)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.sendHeaders(DefaultHttp2ConnectionEncoder.java:183)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders0(DefaultHttp2ConnectionEncoder.java:232)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders(DefaultHttp2ConnectionEncoder.java:150)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler.sendResponseHeaders(NettyServerHandler.java:715)
+	at io.grpc.netty.NettyServerHandler.write(NettyServerHandler.java:634)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1015)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:289)
+	at io.grpc.netty.WriteQueue$AbstractQueuedCommand.run(WriteQueue.java:213)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:128)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,703 WARN  [grpc-default-worker-ELG-3-8](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@30f9edc4 rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Terminated, pool size = 10, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.tryPromise(Http2CodecUtil.java:385)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.tryFailure(Http2CodecUtil.java:306)
+	at io.netty.util.internal.PromiseNotificationUtil.tryFailure(PromiseNotificationUtil.java:64)
+	at io.netty.channel.ChannelOutboundBuffer.safeFail(ChannelOutboundBuffer.java:723)
+	at io.netty.channel.ChannelOutboundBuffer.remove0(ChannelOutboundBuffer.java:308)
+	at io.netty.channel.ChannelOutboundBuffer.failFlushed(ChannelOutboundBuffer.java:660)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:741)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:946)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.flush0(AbstractEpollChannel.java:519)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:898)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.flush(Http2ConnectionHandler.java:189)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.channel.DefaultChannelPipeline.flush(DefaultChannelPipeline.java:967)
+	at io.netty.channel.AbstractChannel.flush(AbstractChannel.java:242)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:147)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,705 WARN  [grpc-default-worker-ELG-3-4](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@1156c2de rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.setPromise(Http2CodecUtil.java:375)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.doneAllocatingPromises(Http2CodecUtil.java:294)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeadersInternal(DefaultHttp2FrameWriter.java:549)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeaders(DefaultHttp2FrameWriter.java:260)
+	at io.netty.handler.codec.http2.Http2OutboundFrameLogger.writeHeaders(Http2OutboundFrameLogger.java:51)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler$WriteMonitoringFrameWriter.writeHeaders(NettyServerHandler.java:1040)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.sendHeaders(DefaultHttp2ConnectionEncoder.java:183)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders0(DefaultHttp2ConnectionEncoder.java:232)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders(DefaultHttp2ConnectionEncoder.java:150)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler.sendResponseHeaders(NettyServerHandler.java:715)
+	at io.grpc.netty.NettyServerHandler.write(NettyServerHandler.java:634)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1015)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:289)
+	at io.grpc.netty.WriteQueue$AbstractQueuedCommand.run(WriteQueue.java:213)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:128)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,706 WARN  [grpc-default-worker-ELG-3-8](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@381399c4 rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.tryPromise(Http2CodecUtil.java:385)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.tryFailure(Http2CodecUtil.java:306)
+	at io.netty.util.internal.PromiseNotificationUtil.tryFailure(PromiseNotificationUtil.java:64)
+	at io.netty.channel.ChannelOutboundBuffer.safeFail(ChannelOutboundBuffer.java:723)
+	at io.netty.channel.ChannelOutboundBuffer.remove0(ChannelOutboundBuffer.java:308)
+	at io.netty.channel.ChannelOutboundBuffer.failFlushed(ChannelOutboundBuffer.java:660)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:741)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:946)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.flush0(AbstractEpollChannel.java:519)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:898)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.flush(Http2ConnectionHandler.java:189)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.channel.DefaultChannelPipeline.flush(DefaultChannelPipeline.java:967)
+	at io.netty.channel.AbstractChannel.flush(AbstractChannel.java:242)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:147)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,707 WARN  [grpc-default-worker-ELG-3-4](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@5e6fe48c rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.setPromise(Http2CodecUtil.java:375)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.doneAllocatingPromises(Http2CodecUtil.java:294)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeadersInternal(DefaultHttp2FrameWriter.java:549)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeaders(DefaultHttp2FrameWriter.java:260)
+	at io.netty.handler.codec.http2.Http2OutboundFrameLogger.writeHeaders(Http2OutboundFrameLogger.java:51)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler$WriteMonitoringFrameWriter.writeHeaders(NettyServerHandler.java:1040)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.sendHeaders(DefaultHttp2ConnectionEncoder.java:183)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders0(DefaultHttp2ConnectionEncoder.java:232)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders(DefaultHttp2ConnectionEncoder.java:150)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler.sendResponseHeaders(NettyServerHandler.java:715)
+	at io.grpc.netty.NettyServerHandler.write(NettyServerHandler.java:634)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1015)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:289)
+	at io.grpc.netty.WriteQueue$AbstractQueuedCommand.run(WriteQueue.java:213)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:128)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,707 WARN  [grpc-default-worker-ELG-3-8](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@42615c22 rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.tryPromise(Http2CodecUtil.java:385)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.tryFailure(Http2CodecUtil.java:306)
+	at io.netty.util.internal.PromiseNotificationUtil.tryFailure(PromiseNotificationUtil.java:64)
+	at io.netty.channel.ChannelOutboundBuffer.safeFail(ChannelOutboundBuffer.java:723)
+	at io.netty.channel.ChannelOutboundBuffer.remove0(ChannelOutboundBuffer.java:308)
+	at io.netty.channel.ChannelOutboundBuffer.failFlushed(ChannelOutboundBuffer.java:660)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:741)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:946)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.flush0(AbstractEpollChannel.java:519)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:898)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.flush(Http2ConnectionHandler.java:189)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.channel.DefaultChannelPipeline.flush(DefaultChannelPipeline.java:967)
+	at io.netty.channel.AbstractChannel.flush(AbstractChannel.java:242)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:147)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,709 WARN  [grpc-default-worker-ELG-3-4](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@165f5169 rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.setPromise(Http2CodecUtil.java:375)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.doneAllocatingPromises(Http2CodecUtil.java:294)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeadersInternal(DefaultHttp2FrameWriter.java:549)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeaders(DefaultHttp2FrameWriter.java:260)
+	at io.netty.handler.codec.http2.Http2OutboundFrameLogger.writeHeaders(Http2OutboundFrameLogger.java:51)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler$WriteMonitoringFrameWriter.writeHeaders(NettyServerHandler.java:1040)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.sendHeaders(DefaultHttp2ConnectionEncoder.java:183)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders0(DefaultHttp2ConnectionEncoder.java:232)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders(DefaultHttp2ConnectionEncoder.java:150)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler.sendResponseHeaders(NettyServerHandler.java:715)
+	at io.grpc.netty.NettyServerHandler.write(NettyServerHandler.java:634)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1015)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:289)
+	at io.grpc.netty.WriteQueue$AbstractQueuedCommand.run(WriteQueue.java:213)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:128)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,711 WARN  [grpc-default-worker-ELG-3-4](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@7c234ac4 rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.setPromise(Http2CodecUtil.java:375)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.doneAllocatingPromises(Http2CodecUtil.java:294)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeadersInternal(DefaultHttp2FrameWriter.java:549)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeaders(DefaultHttp2FrameWriter.java:260)
+	at io.netty.handler.codec.http2.Http2OutboundFrameLogger.writeHeaders(Http2OutboundFrameLogger.java:51)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler$WriteMonitoringFrameWriter.writeHeaders(NettyServerHandler.java:1040)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.sendHeaders(DefaultHttp2ConnectionEncoder.java:183)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders0(DefaultHttp2ConnectionEncoder.java:232)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders(DefaultHttp2ConnectionEncoder.java:150)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler.sendResponseHeaders(NettyServerHandler.java:715)
+	at io.grpc.netty.NettyServerHandler.write(NettyServerHandler.java:634)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1015)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:289)
+	at io.grpc.netty.WriteQueue$AbstractQueuedCommand.run(WriteQueue.java:213)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:128)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,712 WARN  [grpc-default-worker-ELG-3-4](DefaultPromise.java:580) - An exception was thrown by io.grpc.netty.NettyServerHandler$6.operationComplete()
+java.util.concurrent.RejectedExecutionException: Task io.grpc.internal.SerializingExecutor@60feb93f rejected from java.util.concurrent.ThreadPoolExecutor@112b22ea[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 526356]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at alluxio.master.AlluxioExecutorService.execute(AlluxioExecutorService.java:149)
+	at io.grpc.internal.SerializingExecutor.schedule(SerializingExecutor.java:93)
+	at io.grpc.internal.SerializingExecutor.execute(SerializingExecutor.java:86)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closedInternal(ServerImpl.java:851)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener.closed(ServerImpl.java:818)
+	at io.grpc.internal.AbstractServerStream$TransportState.closeListener(AbstractServerStream.java:332)
+	at io.grpc.internal.AbstractServerStream$TransportState.access$100(AbstractServerStream.java:177)
+	at io.grpc.internal.AbstractServerStream$TransportState$2.run(AbstractServerStream.java:304)
+	at io.grpc.internal.AbstractServerStream$TransportState.deframerClosed(AbstractServerStream.java:234)
+	at io.grpc.netty.NettyServerStream$TransportState.deframerClosed(NettyServerStream.java:168)
+	at io.grpc.internal.MessageDeframer.close(MessageDeframer.java:233)
+	at io.grpc.internal.AbstractStream$TransportState.closeDeframer(AbstractStream.java:201)
+	at io.grpc.internal.AbstractServerStream$TransportState.complete(AbstractServerStream.java:308)
+	at io.grpc.netty.NettyServerStream$TransportState.complete(NettyServerStream.java:168)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:673)
+	at io.grpc.netty.NettyServerHandler$6.operationComplete(NettyServerHandler.java:670)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:608)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.setPromise(Http2CodecUtil.java:375)
+	at io.netty.handler.codec.http2.Http2CodecUtil$SimpleChannelPromiseAggregator.doneAllocatingPromises(Http2CodecUtil.java:294)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeadersInternal(DefaultHttp2FrameWriter.java:549)
+	at io.netty.handler.codec.http2.DefaultHttp2FrameWriter.writeHeaders(DefaultHttp2FrameWriter.java:260)
+	at io.netty.handler.codec.http2.Http2OutboundFrameLogger.writeHeaders(Http2OutboundFrameLogger.java:51)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler$WriteMonitoringFrameWriter.writeHeaders(NettyServerHandler.java:1040)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.sendHeaders(DefaultHttp2ConnectionEncoder.java:183)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders0(DefaultHttp2ConnectionEncoder.java:232)
+	at io.netty.handler.codec.http2.DefaultHttp2ConnectionEncoder.writeHeaders(DefaultHttp2ConnectionEncoder.java:150)
+	at io.netty.handler.codec.http2.DecoratingHttp2FrameWriter.writeHeaders(DecoratingHttp2FrameWriter.java:45)
+	at io.grpc.netty.NettyServerHandler.sendResponseHeaders(NettyServerHandler.java:715)
+	at io.grpc.netty.NettyServerHandler.write(NettyServerHandler.java:634)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1015)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:289)
+	at io.grpc.netty.WriteQueue$AbstractQueuedCommand.run(WriteQueue.java:213)
+	at io.grpc.netty.WriteQueue.flush(WriteQueue.java:128)
+	at io.grpc.netty.WriteQueue.access$000(WriteQueue.java:34)
+	at io.grpc.netty.WriteQueue$1.run(WriteQueue.java:46)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2023-08-24 18:06:32,715 INFO  [main](PrimaryOnlyWebServerService.java:57) - Demoting PrimaryOnlyWebServerService
+2023-08-24 18:06:32,716 INFO  [main](WebServerService.java:59) - Stopping web server.
+2023-08-24 18:06:32,721 INFO  [main](AbstractConnector.java:383) - Stopped ServerConnector@51b01960{HTTP/1.1, (http/1.1)}{0.0.0.0:19999}
+2023-08-24 18:06:32,735 INFO  [main](ContextHandler.java:1159) - Stopped o.e.j.s.ServletContextHandler@75504cef{/,file:///opt/alluxio-2.9.3/webui/master/build,STOPPED}
+2023-08-24 18:06:32,736 INFO  [main](ContextHandler.java:1159) - Stopped o.e.j.s.ServletContextHandler@53b98ff6{/metrics/prometheus,null,STOPPED}
+2023-08-24 18:06:32,736 INFO  [main](ContextHandler.java:1159) - Stopped o.e.j.s.ServletContextHandler@1e411d81{/metrics/json,null,STOPPED}
+2023-08-24 18:06:32,750 INFO  [main](PrimaryOnlyMetricsService.java:33) - Demoting PrimaryOnlyMetricsService
+2023-08-24 18:06:32,750 INFO  [main](MetricsService.java:34) - Stop metric sinks.
+2023-08-24 18:06:32,750 INFO  [main](RaftJournalSystem.java:559) - Losing primacy.
+2023-08-24 18:06:32,751 INFO  [main](RaftJournalWriter.java:165) - Closing journal writer. Last sequence numbers written/submitted/committed: 200590/200590/200587
+2023-08-24 18:06:32,751 INFO  [main](RaftJournalSystem.java:573) - Shutting down Raft server
+2023-08-24 18:06:32,752 INFO  [main](RaftServerProxy.java:409) - alluxio-master1_19200: close
+2023-08-24 18:06:32,753 INFO  [main](GrpcService.java:279) - alluxio-master1_19200: shutdown server GrpcServerProtocolService now
+2023-08-24 18:06:32,754 INFO  [alluxio-master1_19200-impl-thread2](JmxRegister.java:73) - Successfully un-registered JMX Bean with object name Ratis:service=RaftServer,group=group-ABB3109A44C1,id=alluxio-master1_19200
+2023-08-24 18:06:32,754 INFO  [alluxio-master1_19200-impl-thread2](RoleInfo.java:110) - alluxio-master1_19200: shutdown alluxio-master1_19200@group-ABB3109A44C1-FollowerState
+2023-08-24 18:06:32,754 INFO  [alluxio-master1_19200-impl-thread2](StateMachineUpdater.java:153) - alluxio-master1_19200@group-ABB3109A44C1-StateMachineUpdater: set stopIndex = 157358
+2023-08-24 18:06:32,754 INFO  [alluxio-master1_19200@group-ABB3109A44C1-FollowerState](FollowerState.java:152) - alluxio-master1_19200@group-ABB3109A44C1-FollowerState was interrupted
+2023-08-24 18:06:32,755 INFO  [alluxio-master1_19200@group-ABB3109A44C1-StateMachineUpdater](SamplingLogger.java:199) - Skip taking snapshot because raft server is not in running state: current state is CLOSING.
+2023-08-24 18:06:32,760 INFO  [ForkJoinPool.commonPool-worker-3](GrpcServerProtocolClient.java:111) - alluxio-master2_19200 Close channels
+2023-08-24 18:06:32,763 INFO  [ForkJoinPool.commonPool-worker-3](GrpcServerProtocolClient.java:111) - alluxio-master3_19200 Close channels
+2023-08-24 18:06:32,766 INFO  [main](GrpcService.java:288) - alluxio-master1_19200: shutdown server GrpcServerProtocolService successfully
+2023-08-24 18:06:32,805 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:347) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker was interrupted, exiting. There are 0 tasks remaining in the queue.
+2023-08-24 18:06:32,806 INFO  [alluxio-master1_19200-impl-thread2](SegmentedRaftLogWorker.java:257) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker close()
+2023-08-24 18:06:32,807 INFO  [JvmPauseMonitor0](JvmPauseMonitor.java:111) - JvmPauseMonitor-alluxio-master1_19200: Stopped
+2023-08-24 18:06:32,808 INFO  [main](RaftJournalSystem.java:580) - Shut down Raft server
+2023-08-24 18:06:32,808 INFO  [main](JournalStateMachine.java:160) - Ihe max concurrency for notifyTermIndexUpdated is loading with max threads 256
+2023-08-24 18:06:32,808 INFO  [main](RocksStore.java:139) - Closing BlockStore rocks database
+2023-08-24 18:06:32,842 INFO  [main](RocksStore.java:195) - Opened rocks database under path /opt/alluxio-2.9.3/metastore/blocks
+2023-08-24 18:06:32,842 INFO  [main](RocksStore.java:129) - Cleared store at /opt/alluxio-2.9.3/metastore/blocks
+2023-08-24 18:06:33,003 INFO  [main](RocksStore.java:139) - Closing InodeStore rocks database
+2023-08-24 18:06:33,033 INFO  [main](RocksStore.java:195) - Opened rocks database under path /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:06:33,033 INFO  [main](RocksStore.java:129) - Cleared store at /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:06:33,086 INFO  [main](JournalStateMachine.java:166) - Initialized new journal state machine
+2023-08-24 18:06:33,093 INFO  [main](ConfUtils.java:46) - raft.rpc.type = GRPC (default)
+2023-08-24 18:06:33,093 INFO  [main](ConfUtils.java:53) - raft.grpc.admin.host = null (fallback to raft.grpc.server.host)
+2023-08-24 18:06:33,094 INFO  [main](ConfUtils.java:53) - raft.grpc.admin.port = 19200 (fallback to raft.grpc.server.port)
+2023-08-24 18:06:33,094 INFO  [main](ConfUtils.java:53) - raft.grpc.client.host = null (fallback to raft.grpc.server.host)
+2023-08-24 18:06:33,094 INFO  [main](ConfUtils.java:53) - raft.grpc.client.port = 19200 (fallback to raft.grpc.server.port)
+2023-08-24 18:06:33,094 INFO  [main](ConfUtils.java:46) - raft.grpc.server.host = null (default)
+2023-08-24 18:06:33,094 INFO  [main](ConfUtils.java:46) - raft.grpc.server.port = 19200 (custom)
+2023-08-24 18:06:33,094 INFO  [main](ConfUtils.java:46) - raft.grpc.message.size.max = 104857600 (custom)
+2023-08-24 18:06:33,094 INFO  [main](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:06:33,094 INFO  [main](ConfUtils.java:46) - raft.grpc.flow.control.window = 1MB (=1048576) (default)
+2023-08-24 18:06:33,095 INFO  [main](ConfUtils.java:46) - raft.server.rpc.request.timeout = 5000ms (custom)
+2023-08-24 18:06:33,095 INFO  [main](ConfUtils.java:46) - raft.grpc.server.heartbeat.channel = true (default)
+2023-08-24 18:06:33,095 INFO  [main](ConfUtils.java:46) - raft.grpc.server.async.request.thread.pool.cached = true (default)
+2023-08-24 18:06:33,095 INFO  [main](ConfUtils.java:46) - raft.grpc.server.async.request.thread.pool.size = 32 (default)
+2023-08-24 18:06:33,096 INFO  [main](ConfUtils.java:46) - raft.datastream.type = DISABLED (default)
+2023-08-24 18:06:33,096 INFO  [main](ConfUtils.java:46) - raft.server.threadpool.proxy.cached = true (default)
+2023-08-24 18:06:33,096 INFO  [main](ConfUtils.java:46) - raft.server.threadpool.proxy.size = 0 (default)
+2023-08-24 18:06:33,096 INFO  [main](ConfUtils.java:46) - raft.server.rpc.slowness.timeout = 9223372036854775807ms (custom)
+2023-08-24 18:06:33,096 INFO  [main](ConfUtils.java:46) - raft.server.leaderelection.leader.step-down.wait-time = 9223372036854775807ms (custom)
+2023-08-24 18:06:33,097 INFO  [main](ConfUtils.java:46) - raft.server.storage.dir = [/opt/alluxio-2.9.3/journal/raft] (custom)
+2023-08-24 18:06:33,098 INFO  [alluxio-master1_19200-impl-thread1](RaftServerProxy.java:251) - alluxio-master1_19200: found a subdirectory /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1
+2023-08-24 18:06:33,098 INFO  [main](RaftServerProxy.java:96) - alluxio-master1_19200: addNew group-ABB3109A44C1:[alluxio-master2_19200|rpc:alluxio-master2:19200|priority:0|startupRole:FOLLOWER, alluxio-master1_19200|rpc:alluxio-master1:19200|priority:0|startupRole:FOLLOWER, alluxio-master3_19200|rpc:alluxio-master3:19200|priority:0|startupRole:FOLLOWER] returns group-ABB3109A44C1:java.util.concurrent.CompletableFuture@3f1a4795[Not completed]
+2023-08-24 18:06:33,099 INFO  [main](RaftJournalSystem.java:588) - Bootstrapping new Raft server
+2023-08-24 18:06:33,099 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.rpc.timeout.min = 10000ms (custom)
+2023-08-24 18:06:33,099 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.rpc.timeout.max = 20000ms (custom)
+2023-08-24 18:06:33,099 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.rpc.sleep.time = 25ms (default)
+2023-08-24 18:06:33,099 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.rpc.slowness.timeout = 9223372036854775807ms (custom)
+2023-08-24 18:06:33,099 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.leaderelection.leader.step-down.wait-time = 9223372036854775807ms (custom)
+2023-08-24 18:06:33,100 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.sleep.deviation.threshold = 300ms (default)
+2023-08-24 18:06:33,100 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.storage.dir = [/opt/alluxio-2.9.3/journal/raft] (custom)
+2023-08-24 18:06:33,100 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.log.corruption.policy = EXCEPTION (default)
+2023-08-24 18:06:33,100 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.storage.free-space.min = 0MB (=0) (default)
+2023-08-24 18:06:33,101 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.notification.no-leader.timeout = 60s (default)
+2023-08-24 18:06:33,101 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.retrycache.expirytime = 60000ms (default)
+2023-08-24 18:06:33,101 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.retrycache.statistics.expirytime = 100?s (default)
+2023-08-24 18:06:33,102 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.log.appender.install.snapshot.enabled = false (custom)
+2023-08-24 18:06:33,102 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.threadpool.server.cached = true (default)
+2023-08-24 18:06:33,103 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.threadpool.server.size = 0 (default)
+2023-08-24 18:06:33,103 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.threadpool.client.cached = true (default)
+2023-08-24 18:06:33,103 INFO  [pool-60-thread-1](ConfUtils.java:46) - raft.server.threadpool.client.size = 0 (default)
+2023-08-24 18:06:33,104 INFO  [alluxio-master1_19200-impl-thread1](RaftStorageDirectoryImpl.java:231) - Lock on /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/in_use.lock acquired by nodename 163@alluxio-master1
+2023-08-24 18:06:33,105 INFO  [alluxio-master1_19200-impl-thread1](RaftStorageImpl.java:117) - Read RaftStorageMetadata{term=2, votedFor=} from /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/raft-meta
+2023-08-24 18:06:33,109 INFO  [alluxio-master1_19200-impl-thread1](JournalStateMachine.java:231) - No snapshot to load
+2023-08-24 18:06:33,109 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.use.memory = false (default)
+2023-08-24 18:06:33,110 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.purge.gap = 1 (custom)
+2023-08-24 18:06:33,110 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:06:33,110 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.read.timeout = 1000ms (default)
+2023-08-24 18:06:33,110 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.purge.preservation.log.num = 0 (default)
+2023-08-24 18:06:33,110 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.size.max = 10485760 (custom)
+2023-08-24 18:06:33,110 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.cache.num.max = 6 (default)
+2023-08-24 18:06:33,111 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.cache.size.max = 200MB (=209715200) (default)
+2023-08-24 18:06:33,111 INFO  [alluxio-master1_19200-impl-thread1](SegmentedRaftLogWorker.java:189) - new alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker for RaftStorageImpl:Storage Directory /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1
+2023-08-24 18:06:33,111 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.queue.byte-limit = 167772160 (custom)
+2023-08-24 18:06:33,111 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.queue.element-limit = 4096 (default)
+2023-08-24 18:06:33,111 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.size.max = 10485760 (custom)
+2023-08-24 18:06:33,111 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.preallocated.size = 4MB (=4194304) (default)
+2023-08-24 18:06:33,111 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.force.sync.num = 128 (default)
+2023-08-24 18:06:33,111 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.sync = true (default)
+2023-08-24 18:06:33,112 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.sync.timeout = 10s (default)
+2023-08-24 18:06:33,112 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.sync.timeout.retry = -1 (default)
+2023-08-24 18:06:33,112 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.write.buffer.size = 64KB (=65536) (default)
+2023-08-24 18:06:33,112 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:06:33,118 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.unsafe-flush.enabled = false (default)
+2023-08-24 18:06:33,118 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.async-flush.enabled = false (default)
+2023-08-24 18:06:33,118 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.caching.enabled = false (default)
+2023-08-24 18:06:33,461 INFO  [alluxio-master1_19200-impl-thread1](LogSegment.java:173) - Successfully read 73499 entries from segment file /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_0-73498
+2023-08-24 18:06:33,562 INFO  [alluxio-master1_19200-impl-thread1](LogSegment.java:173) - Successfully read 71408 entries from segment file /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_73499-144906
+2023-08-24 18:06:33,582 INFO  [alluxio-master1_19200-impl-thread1](LogSegment.java:173) - Successfully read 12463 entries from segment file /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_inprogress_144907
+2023-08-24 18:06:33,582 INFO  [alluxio-master1_19200-impl-thread1](SegmentedRaftLogWorker.java:135) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: flushIndex: setUnconditionally 0 -> 157369
+2023-08-24 18:06:33,582 INFO  [alluxio-master1_19200-impl-thread1](SegmentedRaftLogWorker.java:135) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: safeCacheEvictIndex: setUnconditionally 0 -> -1
+2023-08-24 18:06:33,582 INFO  [alluxio-master1_19200-impl-thread1](RaftLogBase.java:53) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLog: commitIndex: updateToMax old=-1, new=157357, updated? true
+2023-08-24 18:06:33,583 INFO  [alluxio-master1_19200-impl-thread1](RoleInfo.java:139) - alluxio-master1_19200: start alluxio-master1_19200@group-ABB3109A44C1-FollowerState
+2023-08-24 18:06:33,583 INFO  [alluxio-master1_19200-impl-thread1](JmxRegister.java:44) - Successfully registered JMX Bean with object name Ratis:service=RaftServer,group=group-ABB3109A44C1,id=alluxio-master1_19200
+2023-08-24 18:06:33,583 INFO  [alluxio-master1_19200@group-ABB3109A44C1-FollowerState](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.min = 10000ms (fallback to raft.server.rpc.timeout.min)
+2023-08-24 18:06:33,583 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.snapshot.auto.trigger.enabled = true (custom)
+2023-08-24 18:06:33,583 INFO  [alluxio-master1_19200@group-ABB3109A44C1-FollowerState](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.max = 20000ms (fallback to raft.server.rpc.timeout.max)
+2023-08-24 18:06:33,583 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.snapshot.auto.trigger.threshold = 2000000 (custom)
+2023-08-24 18:06:33,584 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.snapshot.retention.file.num = 3 (custom)
+2023-08-24 18:06:33,584 INFO  [alluxio-master1_19200-impl-thread1](ConfUtils.java:46) - raft.server.log.purge.upto.snapshot.index = true (custom)
+2023-08-24 18:06:33,584 INFO  [main](RaftServerProxy.java:393) - alluxio-master1_19200: start RPC server
+2023-08-24 18:06:33,588 INFO  [main](GrpcService.java:270) - alluxio-master1_19200: GrpcService started, listening on 19200
+2023-08-24 18:06:33,588 INFO  [main](RaftJournalSystem.java:597) - Raft server successfully restarted and lost primacy
+2023-08-24 18:06:33,589 INFO  [JvmPauseMonitor1](JvmPauseMonitor.java:105) - JvmPauseMonitor-alluxio-master1_19200: Started
+2023-08-24 18:06:33,589 INFO  [main](AlluxioMasterProcess.java:421) - Stopping all masters components.
+2023-08-24 18:06:33,590 INFO  [main](AbstractMaster.java:104) - ThrottleMaster: Stopping primary master.
+2023-08-24 18:06:33,592 INFO  [main](AbstractMaster.java:124) - ThrottleMaster: Stopped primary master.
+2023-08-24 18:06:33,592 INFO  [main](AbstractMaster.java:104) - MetaMaster: Stopping primary master.
+2023-08-24 18:06:33,593 INFO  [main](AbstractMaster.java:124) - MetaMaster: Stopped primary master.
+2023-08-24 18:06:33,593 INFO  [main](AbstractMaster.java:104) - MetricsMaster: Stopping primary master.
+2023-08-24 18:06:33,593 INFO  [main](AbstractMaster.java:124) - MetricsMaster: Stopped primary master.
+2023-08-24 18:06:33,593 INFO  [main](AbstractMaster.java:104) - JournalMaster: Stopping primary master.
+2023-08-24 18:06:33,594 INFO  [main](AbstractMaster.java:124) - JournalMaster: Stopped primary master.
+2023-08-24 18:06:33,594 INFO  [main](DefaultFileSystemMaster.java:785) - Next directory id before close: 0
+2023-08-24 18:06:33,643 INFO  [alluxio-master1_19200@group-ABB3109A44C1-StateMachineUpdater](RocksStore.java:139) - Closing InodeStore rocks database
+2023-08-24 18:06:33,664 INFO  [info-dumper-0](ProcessUtils.java:230) - Dumped metrics of current process in 1070ms to alluxio-master-failover-metrics-20230824-180632.json
+2023-08-24 18:06:33,665 INFO  [alluxio-master1_19200@group-ABB3109A44C1-StateMachineUpdater](RocksStore.java:195) - Opened rocks database under path /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:06:33,665 INFO  [alluxio-master1_19200@group-ABB3109A44C1-StateMachineUpdater](RocksStore.java:129) - Cleared store at /opt/alluxio-2.9.3/metastore/inodes
+2023-08-24 18:06:35,327 INFO  [alluxio-master1_19200-server-thread1](AbstractPrimarySelector.java:59) - Primary selector transitioning to STANDBY
+2023-08-24 18:06:35,347 INFO  [alluxio-master1_19200-server-thread1](SegmentedRaftLogWorker.java:468) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: Truncating segments toTruncate: (144907, 157369) isOpen? true, length=1817929, newEndIndex=157359
+  toDelete: [], start index 157360
+2023-08-24 18:06:35,348 INFO  [alluxio-master1_19200-server-thread1](SegmentedRaftLogWorker.java:452) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: Starting segment from index:157360
+2023-08-24 18:06:35,352 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:696) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: Truncated log file /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_inprogress_144907 to length 1817929 and moved it to /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_144907-157359
+2023-08-24 18:06:35,352 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:135) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: flushIndex: setUnconditionally 157369 -> 157359
+2023-08-24 18:06:35,352 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:135) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: safeCacheEvictIndex: setUnconditionally -1 -> 157359
+2023-08-24 18:06:35,361 INFO  [alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:656) - alluxio-master1_19200@group-ABB3109A44C1-SegmentedRaftLogWorker: created new log segment /opt/alluxio-2.9.3/journal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_inprogress_157360
+2023-08-24 18:06:38,618 INFO  [main](AbstractMaster.java:104) - FileSystemMaster: Stopping primary master.
+2023-08-24 18:06:38,623 WARN  [Master Persistence Checker](AbstractClient.java:468) - GetJobStatus(id=1692900283440) exits with exception [alluxio.exception.status.UnavailableException: Failed to connect to master (GrpcServerAddress{HostName=alluxio-master2, SocketAddress=alluxio-master2:20001}) after 1 attempts.Please check if Alluxio master is currently running on "GrpcServerAddress{HostName=alluxio-master2, SocketAddress=alluxio-master2:20001}". Service="JobMasterClient"] in 68561 ms (>=10000ms)
+2023-08-24 18:06:38,623 WARN  [Master Persistence Scheduler](AbstractClient.java:468) - Run(jobConfig=PersistConfig{filePath=/1/25168.txt, mountId=1, overwrite=false, ufsPath=/opt/alluxio-2.9.3/underFSStorage/.alluxio_ufs_persistence/25168.txt.alluxio.1692900330062.800f0e53-dbee-4bae-9e88-21987c0e3c03.tmp}) exits with exception [alluxio.exception.status.UnavailableException: Failed to connect to master (GrpcServerAddress{HostName=alluxio-master2, SocketAddress=alluxio-master2:20001}) after 1 attempts.Please check if Alluxio master is currently running on "GrpcServerAddress{HostName=alluxio-master2, SocketAddress=alluxio-master2:20001}". Service="JobMasterClient"] in 68561 ms (>=10000ms)
+2023-08-24 18:06:38,624 WARN  [Master Persistence Checker](DefaultFileSystemMaster.java:4942) - Exception encountered when trying to retrieve the status of a  persist job (id=1692900283440) for file /1/23997.txt (id=402636406783): alluxio.exception.status.UnavailableException: Failed to connect to master (GrpcServerAddress{HostName=alluxio-master2, SocketAddress=alluxio-master2:20001}) after 1 attempts.Please check if Alluxio master is currently running on "GrpcServerAddress{HostName=alluxio-master2, SocketAddress=alluxio-master2:20001}". Service="JobMasterClient".
+2023-08-24 18:06:38,624 WARN  [Master Persistence Scheduler](DefaultFileSystemMaster.java:4637) - Unexpected exception encountered when scheduling the persist job for file /1/25168.txt (id=422282526719) : alluxio.exception.status.UnavailableException: Failed to connect to master (GrpcServerAddress{HostName=alluxio-master2, SocketAddress=alluxio-master2:20001}) after 1 attempts.Please check if Alluxio master is currently running on "GrpcServerAddress{HostName=alluxio-master2, SocketAddress=alluxio-master2:20001}". Service="JobMasterClient"
+2023-08-24 18:06:38,626 INFO  [main](AbstractMaster.java:124) - FileSystemMaster: Stopped primary master.
+2023-08-24 18:06:38,627 INFO  [main](DefaultBlockMaster.java:538) - Next container id before close: 26051
+2023-08-24 18:06:38,627 INFO  [main](AbstractMaster.java:104) - BlockMaster: Stopping primary master.
+2023-08-24 18:06:38,627 INFO  [main](AbstractMaster.java:124) - BlockMaster: Stopped primary master.
+2023-08-24 18:06:38,627 INFO  [main](AlluxioMasterProcess.java:423) - All master components stopped.
+2023-08-24 18:06:38,627 INFO  [main](AlluxioMasterProcess.java:396) - Starting all master components as: follower.
+2023-08-24 18:06:38,630 INFO  [main](MetricsSystem.java:969) - Reset all metrics in the metrics system in 2ms
+2023-08-24 18:06:38,630 INFO  [main](MetricsStore.java:256) - Cleared the metrics store and metrics system in 2 ms
+2023-08-24 18:06:38,631 INFO  [main](DefaultMetaMaster.java:351) - Standby master with address alluxio-master1:19998 starts sending heartbeat to leader master.
+2023-08-24 18:06:38,632 INFO  [main](BackupTracker.java:66) - Resetting backup tracker.
+2023-08-24 18:06:38,632 INFO  [main](BackupWorkerRole.java:90) - Creating backup-worker role.
+2023-08-24 18:06:38,633 INFO  [main](AlluxioMasterProcess.java:413) - All masters started.
+2023-08-24 18:06:38,633 INFO  [main](AlluxioMasterProcess.java:337) - Standby started
+2023-08-24 18:06:38,633 INFO  [main](AlluxioMasterProcess.java:225) - Waiting for journals to catch up.
+2023-08-24 18:06:38,633 INFO  [main](AlluxioMasterProcess.java:229) - Started in stand-by mode.
+2023-08-24 18:06:38,735 INFO  [backup-executor-0](BackupWorkerRole.java:390) - Established connection to backup-leader: alluxio-master3:19998
+2023-08-24 18:06:39,368 WARN  [Meta Master Sync](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.size is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:06:39,368 WARN  [Meta Master Sync](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.expiration.time is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.

@@ -1,0 +1,5 @@
+2023-05-27 03:00:34,738 [main] WARN  o.a.i.c.s.StartupChecks:38 - iotdb.jmx.port missing from datanode-env.sh(Unix or OS X, if you use Windows, check conf/datanode-env.bat) 
+2023-05-27 03:00:35,102 [main] WARN  o.a.i.d.c.IoTDBDescriptor:127 - Cannot find IOTDB_HOME or IOTDB_CONF environment variable when loading config file iotdb-common.properties, use default configuration 
+2023-05-27 03:00:35,136 [main] WARN  o.a.i.d.c.IoTDBDescriptor:171 - Couldn't load the configuration iotdb-common.properties from any of the known sources. 
+2023-05-27 03:00:35,136 [main] WARN  o.a.i.d.c.IoTDBDescriptor:127 - Cannot find IOTDB_HOME or IOTDB_CONF environment variable when loading config file iotdb-datanode.properties, use default configuration 
+2023-05-27 03:00:35,136 [main] WARN  o.a.i.d.c.IoTDBDescriptor:199 - Couldn't load the configuration iotdb-datanode.properties from any of the known sources. 

@@ -1,0 +1,2 @@
+2023-05-27 03:00:37,805 [main] INFO  o.a.i.d.s.e.ExtPipePluginRegister:52 - extPipeDir: /iotdb/sbin/../ext/extPipe 
+2023-05-27 03:00:37,808 [main] INFO  o.a.i.db.sync.SyncService:476 - Load 0 ExternalPipe Plugin: [] 

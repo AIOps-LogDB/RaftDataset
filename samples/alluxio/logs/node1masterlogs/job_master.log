@@ -1,0 +1,168 @@
+2023-08-24 18:04:09,099 INFO  [main](MetricsSystem.java:265) - Starting sinks with config: {}.
+2023-08-24 18:04:09,103 INFO  [main](MetricsHeartbeatContext.java:169) - Created metrics heartbeat with ID app-4731403813001071008. This ID will be used for identifying info from the client. It can be set manually through the alluxio.user.app.id property
+2023-08-24 18:04:09,121 INFO  [main](TieredIdentityFactory.java:62) - Initialized tiered identity TieredIdentity(node=alluxio-master1, rack=null)
+2023-08-24 18:04:09,158 INFO  [main](ProcessUtils.java:66) - Starting Alluxio job master @ alluxio-master1:20001.
+2023-08-24 18:04:09,158 INFO  [main](ProcessUtils.java:67) - Alluxio version: 2.9.4-SNAPSHOT-95dfd109de128cee94106d430c015698770a4591
+2023-08-24 18:04:09,158 INFO  [main](ProcessUtils.java:68) - Java version: 1.8.0_382
+2023-08-24 18:04:09,158 INFO  [main](RpcServerService.java:87) - Starting RpcServerService
+2023-08-24 18:04:09,164 INFO  [main](PrimaryOnlyWebServerService.java:43) - Starting PrimaryOnlyWebServerService
+2023-08-24 18:04:09,165 INFO  [main](RaftJournalSystem.java:779) - Initializing Raft Journal System
+2023-08-24 18:04:09,182 INFO  [main](RaftJournalSystem.java:789) - Starting Raft journal system. Cluster addresses: [alluxio-master1:20003, alluxio-master2:20003, alluxio-master3:20003]. Local address: alluxio-master1:20003
+2023-08-24 18:04:09,198 INFO  [main](JournalStateMachine.java:160) - Ihe max concurrency for notifyTermIndexUpdated is loading with max threads 256
+2023-08-24 18:04:09,200 INFO  [main](JournalStateMachine.java:166) - Initialized new journal state machine
+2023-08-24 18:04:09,252 INFO  [main](MetricRegistriesLoader.java:64) - Loaded MetricRegistries class org.apache.ratis.metrics.impl.MetricRegistriesImpl
+2023-08-24 18:04:09,276 INFO  [main](ConfUtils.java:46) - raft.rpc.type = GRPC (default)
+2023-08-24 18:04:09,329 INFO  [main](ConfUtils.java:53) - raft.grpc.admin.host = null (fallback to raft.grpc.server.host)
+2023-08-24 18:04:09,330 INFO  [main](ConfUtils.java:53) - raft.grpc.admin.port = 20003 (fallback to raft.grpc.server.port)
+2023-08-24 18:04:09,331 INFO  [main](ConfUtils.java:53) - raft.grpc.client.host = null (fallback to raft.grpc.server.host)
+2023-08-24 18:04:09,331 INFO  [main](ConfUtils.java:53) - raft.grpc.client.port = 20003 (fallback to raft.grpc.server.port)
+2023-08-24 18:04:09,332 INFO  [main](ConfUtils.java:46) - raft.grpc.server.host = null (default)
+2023-08-24 18:04:09,332 INFO  [main](ConfUtils.java:46) - raft.grpc.server.port = 20003 (custom)
+2023-08-24 18:04:09,332 INFO  [main](ConfUtils.java:46) - raft.grpc.message.size.max = 104857600 (custom)
+2023-08-24 18:04:09,333 INFO  [main](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:04:09,333 INFO  [main](ConfUtils.java:46) - raft.grpc.flow.control.window = 1MB (=1048576) (default)
+2023-08-24 18:04:09,334 INFO  [main](ConfUtils.java:46) - raft.server.rpc.request.timeout = 5000ms (custom)
+2023-08-24 18:04:09,342 INFO  [main](ConfUtils.java:46) - raft.grpc.server.heartbeat.channel = true (default)
+2023-08-24 18:04:09,344 INFO  [main](ConfUtils.java:46) - raft.grpc.server.async.request.thread.pool.cached = true (default)
+2023-08-24 18:04:09,344 INFO  [main](ConfUtils.java:46) - raft.grpc.server.async.request.thread.pool.size = 32 (default)
+2023-08-24 18:04:09,467 INFO  [main](ConfUtils.java:46) - raft.datastream.type = DISABLED (default)
+2023-08-24 18:04:09,469 INFO  [main](ConfUtils.java:46) - raft.server.threadpool.proxy.cached = true (default)
+2023-08-24 18:04:09,469 INFO  [main](ConfUtils.java:46) - raft.server.threadpool.proxy.size = 0 (default)
+2023-08-24 18:04:09,470 INFO  [main](ConfUtils.java:46) - raft.server.rpc.slowness.timeout = 9223372036854775807ms (custom)
+2023-08-24 18:04:09,470 INFO  [main](ConfUtils.java:46) - raft.server.leaderelection.leader.step-down.wait-time = 9223372036854775807ms (custom)
+2023-08-24 18:04:09,473 INFO  [main](ConfUtils.java:46) - raft.server.storage.dir = [/opt/alluxio-2.9.3/journal/JobJournal/raft] (custom)
+2023-08-24 18:04:09,480 INFO  [main](RaftServerProxy.java:96) - alluxio-master1_20003: addNew group-ABB3109A44C1:[alluxio-master3_20003|rpc:alluxio-master3:20003|priority:0|startupRole:FOLLOWER, alluxio-master1_20003|rpc:alluxio-master1:20003|priority:0|startupRole:FOLLOWER, alluxio-master2_20003|rpc:alluxio-master2:20003|priority:0|startupRole:FOLLOWER] returns group-ABB3109A44C1:java.util.concurrent.CompletableFuture@5852c06f[Not completed]
+2023-08-24 18:04:09,500 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.rpc.timeout.min = 10000ms (custom)
+2023-08-24 18:04:09,501 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.rpc.timeout.max = 20000ms (custom)
+2023-08-24 18:04:09,501 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.rpc.sleep.time = 25ms (default)
+2023-08-24 18:04:09,501 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.rpc.slowness.timeout = 9223372036854775807ms (custom)
+2023-08-24 18:04:09,502 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.leaderelection.leader.step-down.wait-time = 9223372036854775807ms (custom)
+2023-08-24 18:04:09,502 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.sleep.deviation.threshold = 300ms (default)
+2023-08-24 18:04:09,513 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.storage.dir = [/opt/alluxio-2.9.3/journal/JobJournal/raft] (custom)
+2023-08-24 18:04:09,534 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.log.corruption.policy = EXCEPTION (default)
+2023-08-24 18:04:09,535 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.storage.free-space.min = 0MB (=0) (default)
+2023-08-24 18:04:09,545 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.notification.no-leader.timeout = 60s (default)
+2023-08-24 18:04:09,548 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.retrycache.expirytime = 60000ms (default)
+2023-08-24 18:04:09,548 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.retrycache.statistics.expirytime = 100?s (default)
+2023-08-24 18:04:09,650 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.log.appender.install.snapshot.enabled = false (custom)
+2023-08-24 18:04:09,650 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.threadpool.server.cached = true (default)
+2023-08-24 18:04:09,651 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.threadpool.server.size = 0 (default)
+2023-08-24 18:04:09,652 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.threadpool.client.cached = true (default)
+2023-08-24 18:04:09,652 INFO  [pool-7-thread-1](ConfUtils.java:46) - raft.server.threadpool.client.size = 0 (default)
+2023-08-24 18:04:09,654 INFO  [alluxio-master1_20003-impl-thread1](RaftStorageDirectoryImpl.java:137) - The storage directory /opt/alluxio-2.9.3/journal/JobJournal/raft/02511d47-d67c-49a3-9011-abb3109a44c1 does not exist. Creating ...
+2023-08-24 18:04:09,661 INFO  [alluxio-master1_20003-impl-thread1](RaftStorageDirectoryImpl.java:231) - Lock on /opt/alluxio-2.9.3/journal/JobJournal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/in_use.lock acquired by nodename 162@alluxio-master1
+2023-08-24 18:04:09,672 INFO  [alluxio-master1_20003-impl-thread1](RaftStorageImpl.java:96) - Storage directory /opt/alluxio-2.9.3/journal/JobJournal/raft/02511d47-d67c-49a3-9011-abb3109a44c1 has been successfully formatted.
+2023-08-24 18:04:09,675 INFO  [alluxio-master1_20003-impl-thread1](JournalStateMachine.java:231) - No snapshot to load
+2023-08-24 18:04:09,677 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.use.memory = false (default)
+2023-08-24 18:04:09,685 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.purge.gap = 1 (custom)
+2023-08-24 18:04:09,686 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:04:09,687 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.read.timeout = 1000ms (default)
+2023-08-24 18:04:09,688 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.purge.preservation.log.num = 0 (default)
+2023-08-24 18:04:09,691 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.size.max = 10485760 (custom)
+2023-08-24 18:04:09,696 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.cache.num.max = 6 (default)
+2023-08-24 18:04:09,697 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.cache.size.max = 200MB (=209715200) (default)
+2023-08-24 18:04:09,702 INFO  [alluxio-master1_20003-impl-thread1](SegmentedRaftLogWorker.java:189) - new alluxio-master1_20003@group-ABB3109A44C1-SegmentedRaftLogWorker for RaftStorageImpl:Storage Directory /opt/alluxio-2.9.3/journal/JobJournal/raft/02511d47-d67c-49a3-9011-abb3109a44c1
+2023-08-24 18:04:09,703 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.queue.byte-limit = 167772160 (custom)
+2023-08-24 18:04:09,703 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.queue.element-limit = 4096 (default)
+2023-08-24 18:04:09,705 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.segment.size.max = 10485760 (custom)
+2023-08-24 18:04:09,705 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.preallocated.size = 4MB (=4194304) (default)
+2023-08-24 18:04:09,705 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.force.sync.num = 128 (default)
+2023-08-24 18:04:09,706 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.sync = true (default)
+2023-08-24 18:04:09,707 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.sync.timeout = 10s (default)
+2023-08-24 18:04:09,707 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.sync.timeout.retry = -1 (default)
+2023-08-24 18:04:09,713 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.write.buffer.size = 64KB (=65536) (default)
+2023-08-24 18:04:09,714 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.appender.buffer.byte-limit = 10485760 (custom)
+2023-08-24 18:04:09,716 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.unsafe-flush.enabled = false (default)
+2023-08-24 18:04:09,716 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.async-flush.enabled = false (default)
+2023-08-24 18:04:09,717 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.statemachine.data.caching.enabled = false (default)
+2023-08-24 18:04:09,723 INFO  [alluxio-master1_20003-impl-thread1](SegmentedRaftLogWorker.java:135) - alluxio-master1_20003@group-ABB3109A44C1-SegmentedRaftLogWorker: flushIndex: setUnconditionally 0 -> -1
+2023-08-24 18:04:09,723 INFO  [alluxio-master1_20003-impl-thread1](SegmentedRaftLogWorker.java:135) - alluxio-master1_20003@group-ABB3109A44C1-SegmentedRaftLogWorker: safeCacheEvictIndex: setUnconditionally 0 -> -1
+2023-08-24 18:04:09,726 INFO  [alluxio-master1_20003-impl-thread1](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:04:09,727 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.min = 10000ms (fallback to raft.server.rpc.timeout.min)
+2023-08-24 18:04:09,727 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.max = 20000ms (fallback to raft.server.rpc.timeout.max)
+2023-08-24 18:04:09,771 INFO  [alluxio-master1_20003-impl-thread1](JmxRegister.java:44) - Successfully registered JMX Bean with object name Ratis:service=RaftServer,group=group-ABB3109A44C1,id=alluxio-master1_20003
+2023-08-24 18:04:09,773 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.snapshot.auto.trigger.enabled = true (custom)
+2023-08-24 18:04:09,773 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.snapshot.auto.trigger.threshold = 2000000 (custom)
+2023-08-24 18:04:09,774 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.snapshot.retention.file.num = 3 (custom)
+2023-08-24 18:04:09,774 INFO  [alluxio-master1_20003-impl-thread1](ConfUtils.java:46) - raft.server.log.purge.upto.snapshot.index = true (custom)
+2023-08-24 18:04:09,777 INFO  [main](RaftServerProxy.java:393) - alluxio-master1_20003: start RPC server
+2023-08-24 18:04:09,853 INFO  [main](GrpcService.java:270) - alluxio-master1_20003: GrpcService started, listening on 20003
+2023-08-24 18:04:09,856 INFO  [main](RaftJournalSystem.java:795) - Started Raft Journal System in 375ms
+2023-08-24 18:04:09,856 INFO  [JvmPauseMonitor0](JvmPauseMonitor.java:105) - JvmPauseMonitor-alluxio-master1_20003: Started
+2023-08-24 18:04:19,231 INFO  [metrics-master-heartbeat-0](NettyUtils.java:146) - EPOLL_MODE is available
+2023-08-24 18:04:24,949 INFO  [grpc-default-executor-2](VoteContext.java:49) - alluxio-master1_20003@group-ABB3109A44C1-FOLLOWER: accept PRE_VOTE from alluxio-master2_20003: our priority 0 <= candidate's priority 0
+2023-08-24 18:04:24,959 INFO  [grpc-default-executor-0](VoteContext.java:49) - alluxio-master1_20003@group-ABB3109A44C1-FOLLOWER: accept ELECTION from alluxio-master2_20003: our priority 0 <= candidate's priority 0
+2023-08-24 18:04:24,962 INFO  [grpc-default-executor-0](RoleInfo.java:110) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:04:24,962 INFO  [grpc-default-executor-0](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:04:24,962 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](FollowerState.java:152) - alluxio-master1_20003@group-ABB3109A44C1-FollowerState was interrupted
+2023-08-24 18:04:24,964 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.min = 10000ms (fallback to raft.server.rpc.timeout.min)
+2023-08-24 18:04:24,964 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](ConfUtils.java:53) - raft.server.rpc.first-election.timeout.max = 20000ms (fallback to raft.server.rpc.timeout.max)
+2023-08-24 18:04:25,043 INFO  [alluxio-master1_20003-server-thread1](AbstractPrimarySelector.java:59) - Primary selector transitioning to STANDBY
+2023-08-24 18:04:25,070 INFO  [alluxio-master1_20003-server-thread1](SegmentedRaftLogWorker.java:452) - alluxio-master1_20003@group-ABB3109A44C1-SegmentedRaftLogWorker: Starting segment from index:0
+2023-08-24 18:04:25,177 INFO  [alluxio-master1_20003@group-ABB3109A44C1-SegmentedRaftLogWorker](SegmentedRaftLogWorker.java:656) - alluxio-master1_20003@group-ABB3109A44C1-SegmentedRaftLogWorker: created new log segment /opt/alluxio-2.9.3/journal/JobJournal/raft/02511d47-d67c-49a3-9011-abb3109a44c1/current/log_inprogress_0
+2023-08-24 18:04:26,824 WARN  [metrics-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.size is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:26,825 WARN  [metrics-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.expiration.time is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:05:50,163 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](FollowerState.java:143) - alluxio-master1_20003@group-ABB3109A44C1-FollowerState: change to CANDIDATE, lastRpcElapsedTime:23950946393ns, electionTimeout:12219ms
+2023-08-24 18:05:50,164 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:110) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:05:50,169 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](ConfUtils.java:46) - raft.server.leaderelection.pre-vote = true (default)
+2023-08-24 18:05:50,169 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1
+2023-08-24 18:05:50,172 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:312) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1 PRE_VOTE round 0: submit vote requests at term 1 for 0: peers:[alluxio-master3_20003|rpc:alluxio-master3:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master1_20003|rpc:alluxio-master1:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master2_20003|rpc:alluxio-master2:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null
+2023-08-24 18:05:50,179 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1-1](GrpcServerProtocolClient.java:63) - Build channel for alluxio-master3_20003
+2023-08-24 18:05:50,179 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1-2](GrpcServerProtocolClient.java:63) - Build channel for alluxio-master2_20003
+2023-08-24 18:05:55,194 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1](LogUtils.java:137) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1 got exception when requesting votes: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.996253697s. [buffered_nanos=5002882432, waiting_for_connection]
+2023-08-24 18:05:55,195 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1](LogUtils.java:137) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1 got exception when requesting votes: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.996183941s. [buffered_nanos=5002713531, waiting_for_connection]
+2023-08-24 18:05:55,196 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:90) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1: PRE_VOTE REJECTED received 0 response(s) and 2 exception(s):
+2023-08-24 18:05:55,197 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1](LogUtils.java:137) -   Exception 0: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.996253697s. [buffered_nanos=5002882432, waiting_for_connection]
+2023-08-24 18:05:55,197 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1](LogUtils.java:137) -   Exception 1: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.996183941s. [buffered_nanos=5002713531, waiting_for_connection]
+2023-08-24 18:05:55,198 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1](LeaderElection.java:314) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1 PRE_VOTE round 0: result REJECTED
+2023-08-24 18:05:55,199 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1](RoleInfo.java:130) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1
+2023-08-24 18:05:55,200 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection1](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:06:11,237 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](FollowerState.java:143) - alluxio-master1_20003@group-ABB3109A44C1-FollowerState: change to CANDIDATE, lastRpcElapsedTime:16036849475ns, electionTimeout:16035ms
+2023-08-24 18:06:11,237 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:110) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:06:11,237 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](ConfUtils.java:46) - raft.server.leaderelection.pre-vote = true (default)
+2023-08-24 18:06:11,238 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2
+2023-08-24 18:06:11,239 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2](LeaderElection.java:312) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2 PRE_VOTE round 0: submit vote requests at term 1 for 0: peers:[alluxio-master3_20003|rpc:alluxio-master3:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master1_20003|rpc:alluxio-master1:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master2_20003|rpc:alluxio-master2:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null
+2023-08-24 18:06:16,246 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2](LogUtils.java:137) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2 got exception when requesting votes: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.999716165s. [buffered_nanos=5004430889, waiting_for_connection]
+2023-08-24 18:06:16,246 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2](LogUtils.java:137) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2 got exception when requesting votes: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.999749619s. [buffered_nanos=5005179446, waiting_for_connection]
+2023-08-24 18:06:16,247 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2](LeaderElection.java:90) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2: PRE_VOTE REJECTED received 0 response(s) and 2 exception(s):
+2023-08-24 18:06:16,247 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2](LogUtils.java:137) -   Exception 0: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.999716165s. [buffered_nanos=5004430889, waiting_for_connection]
+2023-08-24 18:06:16,247 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2](LogUtils.java:137) -   Exception 1: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.999749619s. [buffered_nanos=5005179446, waiting_for_connection]
+2023-08-24 18:06:16,247 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2](LeaderElection.java:314) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2 PRE_VOTE round 0: result REJECTED
+2023-08-24 18:06:16,248 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2](RoleInfo.java:130) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2
+2023-08-24 18:06:16,248 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection2](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:06:30,186 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](FollowerState.java:143) - alluxio-master1_20003@group-ABB3109A44C1-FollowerState: change to CANDIDATE, lastRpcElapsedTime:13938030645ns, electionTimeout:13937ms
+2023-08-24 18:06:30,187 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:110) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:06:30,188 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](ConfUtils.java:46) - raft.server.leaderelection.pre-vote = true (default)
+2023-08-24 18:06:30,188 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3
+2023-08-24 18:06:30,189 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3](LeaderElection.java:312) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3 PRE_VOTE round 0: submit vote requests at term 1 for 0: peers:[alluxio-master3_20003|rpc:alluxio-master3:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master1_20003|rpc:alluxio-master1:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master2_20003|rpc:alluxio-master2:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null
+2023-08-24 18:06:35,195 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3](LogUtils.java:137) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3 got exception when requesting votes: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.999722626s. [buffered_nanos=5004430685, waiting_for_connection]
+2023-08-24 18:06:35,196 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3](LogUtils.java:137) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3 got exception when requesting votes: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.999741498s. [buffered_nanos=5004597390, waiting_for_connection]
+2023-08-24 18:06:35,196 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3](LeaderElection.java:90) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3: PRE_VOTE REJECTED received 0 response(s) and 2 exception(s):
+2023-08-24 18:06:35,196 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3](LogUtils.java:137) -   Exception 0: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.999722626s. [buffered_nanos=5004430685, waiting_for_connection]
+2023-08-24 18:06:35,196 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3](LogUtils.java:137) -   Exception 1: java.util.concurrent.ExecutionException: org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4.999741498s. [buffered_nanos=5004597390, waiting_for_connection]
+2023-08-24 18:06:35,197 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3](LeaderElection.java:314) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3 PRE_VOTE round 0: result REJECTED
+2023-08-24 18:06:35,197 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3](RoleInfo.java:130) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3
+2023-08-24 18:06:35,197 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection3](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:06:51,382 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](FollowerState.java:143) - alluxio-master1_20003@group-ABB3109A44C1-FollowerState: change to CANDIDATE, lastRpcElapsedTime:16184025163ns, electionTimeout:16183ms
+2023-08-24 18:06:51,383 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:110) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:06:51,397 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](ConfUtils.java:46) - raft.server.leaderelection.pre-vote = true (default)
+2023-08-24 18:06:51,398 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4
+2023-08-24 18:06:51,399 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4](LeaderElection.java:312) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4 PRE_VOTE round 0: submit vote requests at term 1 for 0: peers:[alluxio-master3_20003|rpc:alluxio-master3:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master1_20003|rpc:alluxio-master1:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master2_20003|rpc:alluxio-master2:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null
+2023-08-24 18:06:51,418 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4](LeaderElection.java:90) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4: PRE_VOTE REJECTED received 2 response(s) and 0 exception(s):
+2023-08-24 18:06:51,420 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4](LeaderElection.java:94) -   Response 0: alluxio-master1_20003<-alluxio-master3_20003#0:FAIL-t1
+2023-08-24 18:06:51,420 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4](LeaderElection.java:94) -   Response 1: alluxio-master1_20003<-alluxio-master2_20003#0:FAIL-t1
+2023-08-24 18:06:51,420 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4](LeaderElection.java:314) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4 PRE_VOTE round 0: result REJECTED
+2023-08-24 18:06:51,420 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4](RoleInfo.java:130) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4
+2023-08-24 18:06:51,421 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection4](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:07:07,637 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](FollowerState.java:143) - alluxio-master1_20003@group-ABB3109A44C1-FollowerState: change to CANDIDATE, lastRpcElapsedTime:16216467595ns, electionTimeout:16215ms
+2023-08-24 18:07:07,638 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:110) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:07:07,639 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](ConfUtils.java:46) - raft.server.leaderelection.pre-vote = true (default)
+2023-08-24 18:07:07,639 INFO  [alluxio-master1_20003@group-ABB3109A44C1-FollowerState](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5
+2023-08-24 18:07:07,640 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5](LeaderElection.java:312) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5 PRE_VOTE round 0: submit vote requests at term 1 for 0: peers:[alluxio-master3_20003|rpc:alluxio-master3:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master1_20003|rpc:alluxio-master1:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER, alluxio-master2_20003|rpc:alluxio-master2:20003|admin:|client:|dataStream:|priority:0|startupRole:FOLLOWER]|listeners:[], old=null
+2023-08-24 18:07:07,649 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5](LeaderElection.java:90) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5: PRE_VOTE REJECTED received 2 response(s) and 0 exception(s):
+2023-08-24 18:07:07,649 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5](LeaderElection.java:94) -   Response 0: alluxio-master1_20003<-alluxio-master3_20003#0:FAIL-t1
+2023-08-24 18:07:07,649 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5](LeaderElection.java:94) -   Response 1: alluxio-master1_20003<-alluxio-master2_20003#0:FAIL-t1
+2023-08-24 18:07:07,650 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5](LeaderElection.java:314) - alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5 PRE_VOTE round 0: result REJECTED
+2023-08-24 18:07:07,650 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5](RoleInfo.java:130) - alluxio-master1_20003: shutdown alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5
+2023-08-24 18:07:07,650 INFO  [alluxio-master1_20003@group-ABB3109A44C1-LeaderElection5](RoleInfo.java:139) - alluxio-master1_20003: start alluxio-master1_20003@group-ABB3109A44C1-FollowerState
+2023-08-24 18:07:15,391 INFO  [alluxio-master1_20003-server-thread3](AbstractPrimarySelector.java:59) - Primary selector transitioning to STANDBY

@@ -1,0 +1,9 @@
+2023-05-27 03:00:35,477 [main] WARN  o.a.i.c.s.StartupChecks:38 - iotdb.jmx.port missing from datanode-env.sh(Unix or OS X, if you use Windows, check conf/datanode-env.bat) 
+2023-05-27 03:00:35,886 [main] WARN  o.a.i.d.c.IoTDBDescriptor:127 - Cannot find IOTDB_HOME or IOTDB_CONF environment variable when loading config file iotdb-common.properties, use default configuration 
+2023-05-27 03:00:35,902 [main] WARN  o.a.i.d.c.IoTDBDescriptor:171 - Couldn't load the configuration iotdb-common.properties from any of the known sources. 
+2023-05-27 03:00:35,904 [main] WARN  o.a.i.d.c.IoTDBDescriptor:127 - Cannot find IOTDB_HOME or IOTDB_CONF environment variable when loading config file iotdb-datanode.properties, use default configuration 
+2023-05-27 03:00:35,904 [main] WARN  o.a.i.d.c.IoTDBDescriptor:199 - Couldn't load the configuration iotdb-datanode.properties from any of the known sources. 
+2023-05-27 03:00:54,615 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-4: Detected pause in JVM or host machine (eg GC): pause of approximately 992384490ns. No GCs detected. 
+2023-05-27 03:00:58,657 [4@group-000000000000-FollowerState] WARN  o.a.r.s.i.FollowerState:130 - Unexpected long sleep: sleep 2473ms but took extra 2746319675ns (> threshold = 300ms) 
+2023-05-27 03:01:20,746 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-4: Detected pause in JVM or host machine (eg GC): pause of approximately 791494243ns. No GCs detected. 
+2023-05-27 03:01:31,045 [JvmPauseMonitor0] WARN  o.a.r.u.JvmPauseMonitor:126 - JvmPauseMonitor-4: Detected pause in JVM or host machine (eg GC): pause of approximately 214278265ns. No GCs detected. 

@@ -1,0 +1,85 @@
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    338.94%   118.5MiB / 16GiB    0.72%     392B / 0B         0B / 0B       67
+5228b9b3bd69   alluxio-master3   457.61%   312.6MiB / 16GiB    1.91%     700B / 192B       0B / 17.4MB   72
+fc8925ac3c6e   alluxio-master2   419.39%   337MiB / 16GiB      2.06%     1.68kB / 1.25kB   0B / 22.4MB   84
+7cc630a3dfbc   alluxio-master1   416.94%   395MiB / 16GiB      2.41%     1.79kB / 1.14kB   0B / 22.4MB   89
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    6.31%     438MiB / 16GiB      2.67%     11.4kB / 18.3kB   0B / 0B       259
+5228b9b3bd69   alluxio-master3   72.66%    562.9MiB / 16GiB    3.44%     57.5kB / 53.3kB   0B / 27.2MB   285
+fc8925ac3c6e   alluxio-master2   78.27%    545.5MiB / 16GiB    3.33%     60.2kB / 55.5kB   0B / 27.2MB   237
+7cc630a3dfbc   alluxio-master1   125.09%   583.5MiB / 16GiB    3.56%     58.4kB / 57.3kB   0B / 27.2MB   234
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    188.22%   1.139GiB / 16GiB    7.12%     745kB / 177kB     0B / 0B       203
+5228b9b3bd69   alluxio-master3   149.59%   626.3MiB / 16GiB    3.82%     1.08MB / 417kB    0B / 43.7MB   147
+fc8925ac3c6e   alluxio-master2   395.60%   819.2MiB / 16GiB    5.00%     1.33MB / 633kB    0B / 43.5MB   172
+7cc630a3dfbc   alluxio-master1   618.90%   1.189GiB / 16GiB    7.43%     1.08MB / 2.99MB   0B / 44MB     792
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    150.76%   2.097GiB / 16GiB    13.11%    6.28MB / 2.26MB   0B / 2.36MB   203
+5228b9b3bd69   alluxio-master3   68.08%    770.9MiB / 16GiB    4.71%     14.2MB / 5.17MB   0B / 159MB    151
+fc8925ac3c6e   alluxio-master2   171.79%   1.077GiB / 16GiB    6.73%     20.5MB / 10.1MB   0B / 159MB    177
+7cc630a3dfbc   alluxio-master1   460.61%   1.75GiB / 16GiB     10.93%    16MB / 39.5MB     0B / 161MB    846
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    155.98%   2.115GiB / 16GiB    13.22%    13.8MB / 5.2MB    0B / 3.67MB   203
+5228b9b3bd69   alluxio-master3   76.80%    841.9MiB / 16GiB    5.14%     31.6MB / 11.4MB   0B / 315MB    150
+fc8925ac3c6e   alluxio-master2   144.61%   1.526GiB / 16GiB    9.54%     46.2MB / 22.9MB   0B / 315MB    176
+7cc630a3dfbc   alluxio-master1   362.18%   2.221GiB / 16GiB    13.88%    35.9MB / 88MB     0B / 320MB    844
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    165.25%   2.139GiB / 16GiB    13.37%    21.9MB / 8.32MB   0B / 4.72MB   203
+5228b9b3bd69   alluxio-master3   273.24%   1.013GiB / 16GiB    6.33%     49.5MB / 17.9MB   0B / 467MB    206
+fc8925ac3c6e   alluxio-master2   124.13%   1.743GiB / 16GiB    10.90%    72.5MB / 36.1MB   0B / 470MB    175
+7cc630a3dfbc   alluxio-master1   482.34%   2.501GiB / 16GiB    15.63%    56.5MB / 138MB    0B / 479MB    849
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    147.73%   2.163GiB / 16GiB    13.52%    29.4MB / 11.2MB   0B / 6.03MB   203
+5228b9b3bd69   alluxio-master3   81.25%    1.033GiB / 16GiB    6.45%     66.6MB / 24MB     0B / 621MB    158
+fc8925ac3c6e   alluxio-master2   143.00%   1.825GiB / 16GiB    11.41%    97.8MB / 48.7MB   0B / 622MB    172
+7cc630a3dfbc   alluxio-master1   347.72%   2.579GiB / 16GiB    16.12%    76.2MB / 186MB    0B / 636MB    846
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    0.39%     2.161GiB / 16GiB    13.51%    33.7MB / 12.9MB   0B / 7.34MB   193
+5228b9b3bd69   alluxio-master3   1.63%     1.071GiB / 16GiB    6.69%     76.4MB / 27.5MB   0B / 709MB    150
+fc8925ac3c6e   alluxio-master2   1.50%     1.854GiB / 16GiB    11.59%    113MB / 56.5MB    0B / 704MB    168
+7cc630a3dfbc   alluxio-master1   4.77%     2.654GiB / 16GiB    16.59%    88MB / 214MB      0B / 749MB    841
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    0.16%     2.161GiB / 16GiB    13.51%    33.7MB / 12.9MB   0B / 7.34MB   193
+5228b9b3bd69   alluxio-master3   0.35%     1.071GiB / 16GiB    6.69%     76.4MB / 27.5MB   0B / 709MB    148
+fc8925ac3c6e   alluxio-master2   1.41%     1.854GiB / 16GiB    11.59%    113MB / 56.5MB    0B / 704MB    166
+7cc630a3dfbc   alluxio-master1   2.51%     2.653GiB / 16GiB    16.58%    88MB / 214MB      0B / 749MB    841
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    1.37%     2.161GiB / 16GiB    13.51%    33.7MB / 12.9MB   0B / 7.34MB   193
+5228b9b3bd69   alluxio-master3   120.78%   1.132GiB / 16GiB    7.07%     76.4MB / 27.5MB   0B / 714MB    173
+fc8925ac3c6e   alluxio-master2   2.19%     1.855GiB / 16GiB    11.59%    113MB / 56.6MB    0B / 708MB    166
+7cc630a3dfbc   alluxio-master1   3.33%     2.653GiB / 16GiB    16.58%    88MB / 214MB      0B / 749MB    842
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    0.28%     2.161GiB / 16GiB    13.51%    33.7MB / 12.9MB   0B / 7.34MB   197
+5228b9b3bd69   alluxio-master3   28.65%    1.152GiB / 16GiB    7.20%     76.4MB / 27.5MB   0B / 714MB    173
+fc8925ac3c6e   alluxio-master2   3.30%     1.855GiB / 16GiB    11.59%    113MB / 56.6MB    0B / 708MB    170
+7cc630a3dfbc   alluxio-master1   3.90%     2.653GiB / 16GiB    16.58%    88MB / 214MB      0B / 749MB    843
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    0.41%     2.162GiB / 16GiB    13.51%    33.7MB / 12.9MB   0B / 7.34MB   200
+5228b9b3bd69   alluxio-master3   1.22%     1.151GiB / 16GiB    7.20%     76.4MB / 27.5MB   0B / 714MB    168
+fc8925ac3c6e   alluxio-master2   2.97%     1.855GiB / 16GiB    11.60%    113MB / 56.6MB    0B / 708MB    170
+7cc630a3dfbc   alluxio-master1   2.51%     2.652GiB / 16GiB    16.57%    88MB / 214MB      0B / 749MB    841
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+72a300e825cd   alluxio-worker    234.48%   2.171GiB / 16GiB    13.57%    34MB / 13.1MB     0B / 7.34MB   203
+5228b9b3bd69   alluxio-master3   277.97%   1.235GiB / 16GiB    7.72%     76.7MB / 28.1MB   0B / 714MB    676
+fc8925ac3c6e   alluxio-master2   29.32%    1.866GiB / 16GiB    11.66%    113MB / 56.8MB    0B / 708MB    169
+7cc630a3dfbc   alluxio-master1   5.80%     2.628GiB / 16GiB    16.43%    88.1MB / 214MB    0B / 781MB    211
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O    PIDS
+72a300e825cd   alluxio-worker    129.49%   2.173GiB / 16GiB    13.58%    34.8MB / 13.3MB   0B / 7.6MB   210
+5228b9b3bd69   alluxio-master3   455.83%   1.379GiB / 16GiB    8.62%     78.2MB / 30.9MB   0B / 720MB   814
+fc8925ac3c6e   alluxio-master2   231.88%   1.932GiB / 16GiB    12.07%    115MB / 57.9MB    0B / 714MB   171
+7cc630a3dfbc   alluxio-master1   107.69%   2.63GiB / 16GiB     16.44%    88.8MB / 215MB    0B / 786MB   198
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O    PIDS
+72a300e825cd   alluxio-worker    1.69%     2.192GiB / 16GiB    13.70%    35.7MB / 13.7MB   0B / 7.6MB   210
+5228b9b3bd69   alluxio-master3   1.90%     1.397GiB / 16GiB    8.73%     79.7MB / 34.2MB   0B / 726MB   812
+fc8925ac3c6e   alluxio-master2   1.41%     1.989GiB / 16GiB    12.43%    117MB / 59MB      0B / 721MB   171
+7cc630a3dfbc   alluxio-master1   1.24%     2.631GiB / 16GiB    16.44%    89.6MB / 215MB    0B / 793MB   198
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O    PIDS
+72a300e825cd   alluxio-worker    0.80%     2.192GiB / 16GiB    13.70%    35.7MB / 13.7MB   0B / 7.6MB   206
+5228b9b3bd69   alluxio-master3   2.45%     1.396GiB / 16GiB    8.73%     79.7MB / 34.2MB   0B / 726MB   813
+fc8925ac3c6e   alluxio-master2   1.45%     1.989GiB / 16GiB    12.43%    117MB / 59MB      0B / 721MB   170
+7cc630a3dfbc   alluxio-master1   0.66%     2.635GiB / 16GiB    16.47%    89.7MB / 215MB    0B / 793MB   199
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O    PIDS
+72a300e825cd   alluxio-worker    6.49%     2.194GiB / 16GiB    13.71%    35.7MB / 13.7MB   0B / 7.6MB   204
+5228b9b3bd69   alluxio-master3   2.41%     1.396GiB / 16GiB    8.72%     79.7MB / 34.2MB   0B / 726MB   812
+fc8925ac3c6e   alluxio-master2   1.46%     1.989GiB / 16GiB    12.43%    117MB / 59.1MB    0B / 721MB   170
+7cc630a3dfbc   alluxio-master1   1.07%     2.636GiB / 16GiB    16.47%    89.7MB / 215MB    0B / 793MB   201

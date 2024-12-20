@@ -1,0 +1,51 @@
+2023-08-24 18:04:10,751 INFO  [main](NettyUtils.java:146) - EPOLL_MODE is available
+2023-08-24 18:04:24,448 INFO  [main](TieredIdentityFactory.java:62) - Initialized tiered identity TieredIdentity(node=alluxio-worker, rack=null)
+2023-08-24 18:04:24,484 INFO  [pool-40-thread-1](BlockWorkerFactory.java:62) - Creating DefaultBlockWorker
+2023-08-24 18:04:24,523 INFO  [pool-40-thread-1](DefaultStorageDir.java:103) - StorageDir initialized: path=/dev/shm/alluxioworker, tier=alluxio.worker.block.meta.DefaultStorageTier@1f429836, dirIndex=0, medium=MEM, capacityBytes=1073741824, reservedBytes=0, availableBytes=1073741824
+2023-08-24 18:04:24,642 INFO  [pool-40-thread-1](MetricsSystem.java:265) - Starting sinks with config: {}.
+2023-08-24 18:04:24,644 INFO  [pool-40-thread-1](MetricsHeartbeatContext.java:169) - Created metrics heartbeat with ID app-6997934820221190273. This ID will be used for identifying info from the client. It can be set manually through the alluxio.user.app.id property
+2023-08-24 18:04:24,835 WARN  [config-hash-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.size is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:24,836 WARN  [config-hash-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.expiration.time is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:24,862 WARN  [config-hash-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.size is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:24,863 WARN  [config-hash-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.expiration.time is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:24,877 INFO  [main](Log.java:170) - Logging initialized @14551ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-08-24 18:04:24,953 INFO  [config-hash-master-heartbeat-0](MetricsHeartbeatContext.java:169) - Created metrics heartbeat with ID app-2874719677174643785. This ID will be used for identifying info from the client. It can be set manually through the alluxio.user.app.id property
+2023-08-24 18:04:25,099 INFO  [main](GrpcDataServer.java:119) - Alluxio worker gRPC server started, listening on /0.0.0.0:29999
+2023-08-24 18:04:25,102 INFO  [main](ProcessUtils.java:66) - Starting Alluxio worker @alluxio-worker:29999.
+2023-08-24 18:04:25,102 INFO  [main](ProcessUtils.java:67) - Alluxio version: 2.9.4-SNAPSHOT-95dfd109de128cee94106d430c015698770a4591
+2023-08-24 18:04:25,102 INFO  [main](ProcessUtils.java:68) - Java version: 1.8.0_382
+2023-08-24 18:04:25,112 WARN  [config-hash-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.size is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:25,112 WARN  [config-hash-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.expiration.time is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:25,150 WARN  [config-hash-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.size is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:25,151 WARN  [config-hash-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.expiration.time is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:25,177 INFO  [main](BlockMapIterator.java:69) - Worker register stream batchSize=1000000
+2023-08-24 18:04:25,208 INFO  [main](RegisterStreamer.java:243) - Worker 720781237885360920 - All requests have been sent. Completing the client side.
+2023-08-24 18:04:25,209 INFO  [main](RegisterStreamer.java:245) - Worker 720781237885360920 - Waiting on the master side to complete
+2023-08-24 18:04:25,271 INFO  [grpc-default-executor-0](RegisterStreamer.java:170) - 720781237885360920 - Complete message received from the server. Closing stream
+2023-08-24 18:04:25,273 INFO  [main](RegisterStreamer.java:257) - Worker 720781237885360920 - Finished registration with a stream
+2023-08-24 18:04:25,280 INFO  [main](WebServer.java:209) - Alluxio worker web service starting @ /0.0.0.0:30000
+2023-08-24 18:04:25,283 INFO  [main](Server.java:375) - jetty-9.4.46.v20220331; built: 2022-03-31T16:38:08.030Z; git: bc17a0369a11ecf40bb92c839b9ef0a8ac50ea18; jvm 1.8.0_382-b05
+2023-08-24 18:04:25,324 INFO  [main](ContextHandler.java:921) - Started o.e.j.s.ServletContextHandler@78461bc4{/metrics/json,null,AVAILABLE}
+2023-08-24 18:04:25,325 INFO  [main](ContextHandler.java:921) - Started o.e.j.s.ServletContextHandler@544630b7{/metrics/prometheus,null,AVAILABLE}
+2023-08-24 18:04:25,326 WARN  [main](ConstraintSecurityHandler.java:759) - ServletContext@o.e.j.s.ServletContextHandler@532721fd{/,file:///opt/alluxio-2.9.3/webui/worker/build,STARTING} has uncovered http methods for path: /
+2023-08-24 18:04:33,741 INFO  [main](ContextHandler.java:921) - Started o.e.j.s.ServletContextHandler@532721fd{/,file:///opt/alluxio-2.9.3/webui/worker/build,AVAILABLE}
+2023-08-24 18:04:33,759 INFO  [main](AbstractConnector.java:333) - Started ServerConnector@5ddea849{HTTP/1.1, (http/1.1)}{0.0.0.0:30000}
+2023-08-24 18:04:33,759 INFO  [main](Server.java:415) - Started @23433ms
+2023-08-24 18:04:33,760 INFO  [main](WebServer.java:211) - Alluxio worker web service started @ /0.0.0.0:30000
+2023-08-24 18:04:33,778 INFO  [main](AlluxioWorkerProcess.java:246) - Alluxio worker started. id=720781237885360920, bindHost=0.0.0.0, connectHost=alluxio-worker, rpcPort=29999, webPort=30000
+2023-08-24 18:04:34,970 WARN  [metrics-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.size is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:04:34,971 WARN  [metrics-master-heartbeat-0](InstancedConfiguration.java:381) - alluxio.user.ufs.block.read.location.policy.cache.expiration.time is deprecated. Please avoid using this key in the future. CapacityBaseRandomPolicy no longer caches block locations. To make sure a block is always assigned to the same worker, use DeterministicHashPolicy.
+2023-08-24 18:06:21,701 WARN  [metrics-master-heartbeat-0](SamplingLogger.java:269) - Failed to send metrics to master: alluxio.exception.status.UnavailableException: UNAVAILABLE: io exception
+2023-08-24 18:06:37,015 WARN  [config-hash-master-heartbeat-0](AbstractClient.java:457) - GetConfigHash() returned clusterConfigHash: "a9e0ec9bb1859bac59457d68095c80ab"
+pathConfigHash: "d41d8cd98f00b204e9800998ecf8427e"
+ in 12346 ms (>=10000 ms)
+2023-08-24 18:06:37,036 WARN  [Worker Pin List Sync](AbstractClient.java:457) - GetPinList() returned HashSet{1477 entries} in 66748 ms (>=10000 ms)
+2023-08-24 18:06:37,037 WARN  [Worker Pin List Sync](SleepingTimer.java:86) - Worker Pin List Sync last execution took 66749 ms. Longer than the interval 1000
+2023-08-24 18:06:37,076 WARN  [Worker Block Sync](AbstractClient.java:457) - Heartbeat(workerId=720781237885360920) returned commandType: Register
+ in 66781 ms (>=10000 ms)
+2023-08-24 18:06:37,120 INFO  [Worker Block Sync](BlockMapIterator.java:69) - Worker register stream batchSize=1000000
+2023-08-24 18:06:37,125 INFO  [Worker Block Sync](RegisterStreamer.java:243) - Worker 6249710455479758760 - All requests have been sent. Completing the client side.
+2023-08-24 18:06:37,125 INFO  [Worker Block Sync](RegisterStreamer.java:245) - Worker 6249710455479758760 - Waiting on the master side to complete
+2023-08-24 18:06:37,161 INFO  [grpc-default-executor-5](RegisterStreamer.java:170) - 6249710455479758760 - Complete message received from the server. Closing stream
+2023-08-24 18:06:37,162 INFO  [Worker Block Sync](RegisterStreamer.java:257) - Worker 6249710455479758760 - Finished registration with a stream
+2023-08-24 18:06:37,162 WARN  [Worker Block Sync](SleepingTimer.java:86) - Worker Block Sync last execution took 66872 ms. Longer than the interval 1000
